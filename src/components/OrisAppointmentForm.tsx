@@ -57,7 +57,7 @@ export function OrisAppointmentForm() {
     setTimeout(() => {
       setSubmitting(false);
       toast.success(
-        "Request confirmed! Dr. Ahmed Karam & Utopia Dokki team will contact you shortly."
+        "Request confirmed! Dr. Karim Kamal & Dubai Dental Clinic team will contact you shortly."
       );
       setName("");
       setEmail("");
@@ -71,7 +71,7 @@ export function OrisAppointmentForm() {
       <div className="relative w-full rounded-t-[2.2vw] max-[1025px]:rounded-t-3xl overflow-hidden min-h-[80vh] max-[1025px]:min-h-0 flex items-start justify-between oris-paddx py-[5.6vw] max-[1025px]:p-8 max-md:p-6 max-[1025px]:py-16! max-[1025px]:flex-col max-[1025px]:gap-10">
         {/* Background Image */}
         <img
-          alt="Utopia Dental clinic background"
+          alt="Dubai Dental Clinic background"
           src="/oris/animated-form-bg.webp"
           className="absolute inset-0 w-full h-full object-cover pointer-events-none z-0"
         />
@@ -88,7 +88,7 @@ export function OrisAppointmentForm() {
           </h2>
           <p className="oris-text22 max-w-[36vw] max-[1025px]:max-w-xl mt-[2vw] max-[1025px]:mt-4 font-light text-white/90 leading-relaxed">
             Leave a request or chat with our care coordinator directly. We are
-            located on the 9th floor of 116 Mohy El-Din Abu El-Ezz St., Dokki.
+            located at 20 Ezz El-Din Omar St., Al-Haram, Giza.
           </p>
 
           {/* Quick Direct Actions Box */}
@@ -116,14 +116,14 @@ export function OrisAppointmentForm() {
                 <Phone className="w-5 h-5 text-blue-200" />
               </div>
               <div>
-                <p className="text-xs font-bold leading-tight">Call Reception: 0111 765 5583</p>
-                <p className="text-[11px] text-white/70">Daily from 2:00 PM – 10:00 PM</p>
+                <p className="text-xs font-bold leading-tight">Call Reception: {clinicData.phoneDisplay}</p>
+                <p className="text-[11px] text-white/70">Daily from 1:00 PM – 11:00 PM</p>
               </div>
             </a>
 
             <div className="flex items-center gap-2 text-xs text-white/70 pt-2">
               <MapPin className="w-4 h-4 text-blue-300 shrink-0" />
-              <span>116 Mohy El-Din Abu El-Ezz, 9th Floor, Dokki</span>
+              <span>20 Ezz El-Din Omar St., Al-Haram, Giza</span>
             </div>
           </div>
         </div>

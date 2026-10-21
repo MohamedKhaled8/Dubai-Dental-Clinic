@@ -19,12 +19,12 @@ export function UtopiaVerifiedReviews() {
             <h2 className="text-[3.8vw] max-[1025px]:text-[5.5vw] max-md:text-[7.5vw] font-normal leading-[1.18] text-oris-secondary tracking-tight">
               Trusted by Patients Across{" "}
               <span className="block font-medium text-[#13314a]">
-                Dokki & Greater Cairo
+                Al-Haram & Greater Cairo
               </span>
             </h2>
             <p className="oris-text22 text-gray-600 mt-3 max-w-2xl leading-relaxed">
-              Real clinical experiences from patients who chose Utopia Dental
-              Clinics for gentle implants, pediatric care, and restorative
+              Real clinical experiences from patients who chose Dubai Dental
+              Clinic for gentle implants, pediatric care, and restorative
               dentistry.
             </p>
           </div>
@@ -53,7 +53,7 @@ export function UtopiaVerifiedReviews() {
                 Over {clinicData.googleRating.reviewCount} Happy Smiles
               </p>
               <p className="text-xs text-gray-500">
-                Dokki Clinic · 9th Floor, 116 Mohy El-Din
+                Al-Haram Clinic · 20 Ezz El-Din Omar St.
               </p>
             </div>
           </div>

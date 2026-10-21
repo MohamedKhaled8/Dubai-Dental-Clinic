@@ -1,27 +1,27 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { OrisDentalTemplate } from "@/components/OrisDentalTemplate";
+import { DubaiDentalV2 } from "@/components/v2/DubaiDentalV2";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       {
-        title: "Utopia Dental Clinics — Calm, Specialist Care in Dokki | عيادات يوتوبيا",
+        title: "مركز دبي لطب الأسنان — الهرم، الجيزة | Dubai Dental Clinic",
       },
       {
         name: "description",
         content:
-          "Specialist dental care in Dokki, Giza: 3D guided implants, clear aligners, pediatric dentistry, and veneers on the 9th floor of 116 Mohy El-Din Abu El-Ezz. Call 01117655583.",
+          "مركز دبي التخصصي لطب وتجميل وزراعة الأسنان في الهرم، الجيزة (٢٠ شارع عز الدين عمر - محطة العريش). رعاية استشارية متكاملة لجراحة وزراعة الأسنان، علاج الجذور، والتقويم الشفاف. هاتف: 01022013314.",
       },
       {
         property: "og:title",
-        content: "Utopia Dental Clinics Dokki | عيادات يوتوبيا للأسنان",
+        content: "مركز دبي لطب الأسنان بالهرم | Dubai Dental Clinic",
       },
       {
         property: "og:description",
         content:
-          "Gentle, personalized dental care with 3D CBCT digital planning, guided implants, and certified consultants in Dokki.",
+          "رعاية تخصصية لطب الأسنان بالهرم: زراعة أسنان، تقويم شفاف، تجميل وفينيرز، وعلاج الجذور. ٢٠ شارع عز الدين عمر، محطة العريش، الهرم. هاتف: 01022013314.",
       },
     ],
   }),
-  component: OrisDentalTemplate,
+  component: DubaiDentalV2,
 });

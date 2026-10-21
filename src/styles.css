@@ -4,7 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * UTOPIA DENTAL CLINICS — "QUIET LUXURY MEETS LIVING LIGHT"
+ * DUBAI DENTAL CLINIC — "QUIET LUXURY MEETS LIVING LIGHT"
  * Palette:
  * ink #0E1F1C (deep pine-black)
  * pine #16372F
@@ -92,8 +92,24 @@
   }
 
   html {
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
     background-color: var(--color-background);
+  }
+
+  html.lenis, html.lenis body {
+    height: auto;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+
+  .lenis.lenis-stopped {
+    overflow: hidden;
   }
 
   body {
@@ -104,16 +120,7 @@
     position: relative;
   }
 
-  /* Paper grain noise overlay (subtle 5% texture) */
-  body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    z-index: 999;
-    opacity: 0.04;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-  }
+
 
   /* Typography mapping per language */
   :root[lang="ar"] {
@@ -427,4 +434,43 @@ html.lenis body {
 .lenis.lenis-smooth iframe {
   pointer-events: none;
 }
+
+/* Evia Dental Boutique Kinetic Marquee Animations */
+@keyframes eviaMarqueeLeft {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes eviaMarqueeRight {
+  0% {
+    transform: translate3d(-50%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animate-evia-marquee-left {
+  display: flex;
+  width: max-content;
+  animation: eviaMarqueeLeft 45s linear infinite;
+  will-change: transform;
+}
+
+.animate-evia-marquee-right {
+  display: flex;
+  width: max-content;
+  animation: eviaMarqueeRight 50s linear infinite;
+  will-change: transform;
+}
+
+.animate-evia-marquee-left:hover,
+.animate-evia-marquee-right:hover {
+  animation-play-state: paused !important;
+}
+
 

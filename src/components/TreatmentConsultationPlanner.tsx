@@ -71,12 +71,12 @@ export function TreatmentConsultationPlanner() {
         ar: [
           "تقييم شامل لإطباق الفكين",
           "تركيب التقويم المناسب ومناقشة الخطة",
-          "جلسات ضبط دورية شهرية بالدقي",
+          "جلسات ضبط دورية شهرية بالعيادة بالهرم",
         ],
         en: [
           "Comprehensive occlusal assessment",
           "Custom appliance fitting",
-          "Monthly adjustments in Dokki",
+          "Monthly adjustments in Al-Haram clinic",
         ],
       },
       doctor: doctors.find((d) => d.id === "sherif-fathy") || doctors[0]!,
@@ -110,8 +110,8 @@ export function TreatmentConsultationPlanner() {
 
   const whatsappMessage = encodeURIComponent(
     isAr
-      ? `مرحباً عيادات يوتوبيا بالدقي، أود الاستفسار وحجز استشارة بخصوص: ${current.label.ar}`
-      : `Hello Utopia Dental Clinics Dokki, I would like to inquire about: ${current.label.en}`,
+      ? `مرحباً مركز دبي لطب الأسنان، أود الاستفسار وحجز استشارة بخصوص: ${current.label.ar}`
+      : `Hello Dubai Dental Clinic, I would like to inquire about: ${current.label.en}`,
   );
 
   return (
@@ -127,13 +127,13 @@ export function TreatmentConsultationPlanner() {
           </h3>
           <p className="mt-2 text-sm text-[#52525b]">
             {isAr
-              ? "اختر الإجراء الذي ترغب به للتعرف على الخطوات التقديرية، المدة، والاستشاري المشرف في فرع الدقي."
-              : "Select a specialty to explore expected visits, clinical milestones, and attending specialists in Dokki."}
+              ? "اختر الإجراء الذي ترغب به للتعرف على الخطوات التقديرية، المدة، والاستشاري المشرف بالهرم."
+              : "Select a specialty to explore expected visits, clinical milestones, and attending specialists in Al-Haram."}
           </p>
         </div>
 
         <div className="shrink-0 text-xs font-semibold text-[#8c6d46]">
-          {isAr ? "عيادات يوتوبيا · الدقي، الطابق التاسع" : "Utopia Clinics · Dokki, 9th Floor"}
+          {isAr ? "مركز دبي لطب الأسنان · الهرم" : "Dubai Dental Clinic · Al-Haram"}
         </div>
       </div>
 
@@ -193,7 +193,7 @@ export function TreatmentConsultationPlanner() {
             </div>
             <div>
               <p className="text-xs text-[#52525b]">
-                {isAr ? "الاستشاري المشرف بالدقي" : "Attending Specialist"}
+                {isAr ? "الاستشاري المشرف بمركز دبي" : "Attending Specialist"}
               </p>
               <p className="font-display text-base font-bold text-[#0f172a]">
                 {tr(current.doctor.name)}
@@ -210,7 +210,7 @@ export function TreatmentConsultationPlanner() {
 
           <div className="mt-6 space-y-2.5">
             <a
-              href={`https://wa.me/201117655583?text=${whatsappMessage}`}
+              href={`https://wa.me/201022013314?text=${whatsappMessage}`}
               target="_blank"
               rel="noopener noreferrer"
               className="flex w-full items-center justify-center gap-2 rounded-full bg-[#0f172a] py-3 text-xs font-bold text-white transition-colors hover:bg-[#1e293b]"
@@ -223,7 +223,7 @@ export function TreatmentConsultationPlanner() {
               href={clinic.tel}
               className="flex w-full items-center justify-center gap-2 rounded-full border border-[#d5d1c5] bg-white py-2.5 text-xs font-bold text-[#0f172a] hover:bg-[#f4f2ec]"
             >
-              <span>{isAr ? "اتصال بالعيادة: 01117655583" : "Call Clinic: +20 111 765 5583"}</span>
+              <span>{isAr ? `اتصال بالعيادة: ${clinic.phone}` : `Call Clinic: ${clinic.phone}`}</span>
             </a>
           </div>
         </div>

@@ -50,7 +50,7 @@ function BookingPage() {
   const [selectedDate, setSelectedDate] = useState<string>(() => {
     const tomorrow = new Date();
     tomorrow.setDate(tomorrow.getDate() + 1);
-    return tomorrow.toISOString().split("T")[0];
+    return tomorrow.toISOString().split("T")[0] ?? "";
   });
   const [timeWindow, setTimeWindow] = useState<"afternoon" | "evening">("evening");
   const [patientName, setPatientName] = useState("");
@@ -61,7 +61,7 @@ function BookingPage() {
   const [honeypot, setHoneypot] = useState(""); // Bot prevention
 
   // Errors & submission
-  const [errors, setErrors] = useState<Record<string, string>>({});
+  const [errors, setErrors] = useState<{ services?: string; date?: string; name?: string; phone?: string; submit?: string }>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [confirmedBooking, setConfirmedBooking] = useState<BookingRequest | null>(null);
 
@@ -77,7 +77,7 @@ function BookingPage() {
 
   // Validation
   const validateStep2 = () => {
-    const errs: Record<string, string> = {};
+    const errs: typeof errors = {};
     if (!selectedDate) {
       errs.date = isAr ? "يرجى تحديد التاريخ المفضل" : "Please select a preferred date";
     }
@@ -86,7 +86,7 @@ function BookingPage() {
   };
 
   const validateStep3 = () => {
-    const errs: Record<string, string> = {};
+    const errs: typeof errors = {};
     if (!patientName.trim()) {
       errs.name = isAr ? "يرجى إدخال اسم المريض" : "Please enter patient name";
     }
@@ -98,8 +98,8 @@ function BookingPage() {
       errs.phone = isAr ? "يرجى إدخال رقم الهاتف" : "Please enter phone number";
     } else if (!egRegex.test(cleanPhone)) {
       errs.phone = isAr
-        ? "يرجى إدخال رقم مصري صحيح (مثال: 01117655583)"
-        : "Please enter a valid Egyptian phone (e.g. 01117655583)";
+        ? "يرجى إدخال رقم مصري صحيح (مثال: 01022013314)"
+        : "Please enter a valid Egyptian phone (e.g. 01022013314)";
     }
 
     setErrors(errs);
@@ -121,9 +121,9 @@ function BookingPage() {
         timeWindow,
         patientName,
         phone,
-        email: email.trim() || undefined,
+        ...(email.trim() ? { email: email.trim() } : {}),
         isChild,
-        notes: notes.trim() || undefined,
+        ...(notes.trim() ? { notes: notes.trim() } : {}),
       });
 
       setConfirmedBooking(newBooking);
@@ -156,12 +156,12 @@ function BookingPage() {
 
     const icsContent = `BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//Utopia Dental Clinics//Dokki Booking//EN
+PRODID:-//Dubai Dental Clinic//Haram Booking//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
-SUMMARY:Utopia Dental Clinic Visit - ${sNames}
-DESCRIPTION:Requested dental appointment at Utopia Dental Clinics, Dokki, Giza.\\nPatient: ${confirmedBooking.patientName}\\nClinic Phone: +201117655583
-LOCATION:116 Mohy El-Din Abu El-Ezz St., 9th Floor, Dokki, Giza, Egypt
+SUMMARY:Dubai Dental Clinic Visit - ${sNames}
+DESCRIPTION:Requested dental appointment at Dubai Dental Clinic, Al-Haram, Giza.\\nPatient: ${confirmedBooking.patientName}\\nClinic Phone: +201022013314
+LOCATION:20 Ezz El-Din Omar St., Al-Haram, Talbiya, Giza, Egypt
 DTSTART:${dateFormatted}T${startH}
 DTEND:${dateFormatted}T${endH}
 STATUS:TENTATIVE
@@ -172,7 +172,7 @@ END:VCALENDAR`;
     const url = URL.createObjectURL(blob);
     const link = document.createElement("a");
     link.href = url;
-    link.setAttribute("download", `utopia-appointment-${confirmedBooking.id.slice(-6)}.ics`);
+    link.setAttribute("download", `dubai-dental-appointment-${confirmedBooking.id.slice(-6)}.ics`);
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -198,7 +198,7 @@ END:VCALENDAR`;
         : "Evening (6:00 PM - 10:00 PM)";
 
     const text = isAr
-      ? `مرحباً عيادات يوتوبيا لطب الأسنان، أود تأكيد طلب حجز موعدي:\n` +
+      ? `مرحباً مركز دبي لطب الأسنان، أود تأكيد طلب حجز موعدي:\n` +
         `• رقم الطلب: #${confirmedBooking.id.slice(-6)}\n` +
         `• الاسم: ${confirmedBooking.patientName}\n` +
         `• الخدمات المطلوبة: ${sNames || "استشارة عامة"}\n` +
@@ -206,7 +206,7 @@ END:VCALENDAR`;
         `• التوقيت: ${timeLabel}\n` +
         (confirmedBooking.isChild ? `• ملاحظة: المريض طفل 👶\n` : "") +
         `بانتظار تأكيد الموعد النهائي من فريقكم الكريم.`
-      : `Hello Utopia Dental Clinics, I would like to confirm my booking request:\n` +
+      : `Hello Dubai Dental Clinic, I would like to confirm my booking request:\n` +
         `• Request ID: #${confirmedBooking.id.slice(-6)}\n` +
         `• Name: ${confirmedBooking.patientName}\n` +
         `• Services: ${sNames || "General Consultation"}\n` +
@@ -215,7 +215,7 @@ END:VCALENDAR`;
         (confirmedBooking.isChild ? `• Note: Patient is a child 👶\n` : "") +
         `Looking forward to confirming my appointment.`;
 
-    return `https://wa.me/201117655583?text=${encodeURIComponent(text)}`;
+    return `https://wa.me/201022013314?text=${encodeURIComponent(text)}`;
   };
 
   return (
@@ -229,7 +229,7 @@ END:VCALENDAR`;
           </div>
 
           <h1 className="mt-4 font-display text-3xl font-bold tracking-tight text-[#0E1F1C] md:text-5xl">
-            {isAr ? "طلب حجز زيارة بعيادات يوتوبيا" : "Request a Visit at Utopia"}
+            {isAr ? "طلب حجز زيارة بمركز دبي لطب الأسنان" : "Request a Visit at Dubai Dental Clinic"}
           </h1>
 
           <p className="mt-4 text-sm md:text-base text-[#16372F]/80 max-w-2xl mx-auto leading-relaxed">
@@ -321,7 +321,7 @@ END:VCALENDAR`;
                           : "bg-[#F6F1E7] text-[#16372F]"
                       }`}
                     >
-                      <ServiceIcon name={s.icon} className="w-5 h-5" />
+                      <ServiceIcon name={s.icon ?? s.iconName} className="w-5 h-5" />
                     </div>
 
                     <div className="flex-1">
@@ -338,7 +338,7 @@ END:VCALENDAR`;
                         </div>
                       </div>
                       <p className="mt-1 text-xs text-[#16372F]/70 line-clamp-2 leading-relaxed">
-                        {s.shortTagline[lang]}
+                        {(s.shortTagline ?? s.tagline)[lang]}
                       </p>
                     </div>
                   </button>
@@ -378,8 +378,8 @@ END:VCALENDAR`;
               </h2>
               <p className="mt-1 text-xs md:text-sm text-[#16372F]/70">
                 {isAr
-                  ? "ساعات العمل يومياً من ٢:٠٠ ظهراً حتى ١٠:٠٠ مساءً بالدقي."
-                  : "Working hours: Daily 2:00 PM – 10:00 PM in Dokki, Giza."}
+                  ? "ساعات العمل يومياً من ١:٠٠ ظهراً حتى ١١:٠٠ مساءً بالهرم."
+                  : "Working hours: Daily 1:00 PM – 11:00 PM in Al-Haram, Giza."}
               </p>
             </div>
 
@@ -566,7 +566,7 @@ END:VCALENDAR`;
                     dir="ltr"
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
-                    placeholder="01117655583"
+                    placeholder="01022013314"
                     className="w-full rounded-xl border border-[#C2A06A]/30 bg-[#FBF9F4] px-4 py-3 text-sm font-mono font-bold text-[#0E1F1C] focus:border-[#C2A06A] focus:outline-none"
                   />
                   <Phone className="absolute end-4 top-3.5 w-4 h-4 text-[#16372F]/40" />
@@ -653,8 +653,8 @@ END:VCALENDAR`;
                 <ShieldCheck className="w-5 h-5 text-[#C2A06A] shrink-0 mt-0.5" />
                 <p className="leading-relaxed">
                   {isAr
-                    ? "تنبيه: هذا طلب حجز مبدئي عبر الإنترنت — سيقوم فريق عيادات يوتوبيا بالتواصل هاتفياً أو عبر الواتساب لتأكيد الحضور وتحديد الساعة بدقة."
-                    : "Notice: This is a preliminary booking request — Utopia Dental Clinics team will contact you via phone or WhatsApp to finalize your exact appointment hour."}
+                    ? "تنبيه: هذا طلب حجز مبدئي عبر الإنترنت — سيقوم فريق مركز دبي لطب الأسنان بالتواصل هاتفياً أو عبر الواتساب لتأكيد الحضور وتحديد الساعة بدقة."
+                    : "Notice: This is a preliminary booking request — Dubai Dental Clinic team will contact you via phone or WhatsApp to finalize your exact appointment hour."}
                 </p>
               </div>
 
@@ -747,7 +747,7 @@ END:VCALENDAR`;
               <div className="flex justify-between">
                 <span className="text-[#16372F]/60">{isAr ? "العيادة:" : "Clinic:"}</span>
                 <span className="font-medium text-[#0E1F1C]">
-                  {isAr ? "الدقي، ١١٦ شارع محيي الدين أبو العز" : "Dokki, 116 Mohy El-Din Abu El-Ezz"}
+                  {isAr ? "الهرم، ٢٠ شارع عز الدين عمر، محطة العريش" : "Al-Haram, 20 Ezz El-Din Omar St., El-Arish"}
                 </span>
               </div>
             </div>

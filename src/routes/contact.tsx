@@ -20,12 +20,12 @@ export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
       {
-        title: "تواصل مع عيادات يوتوبيا بالدقي | Contact & Location — Dokki, Giza",
+        title: "تواصل مع مركز دبي لطب الأسنان بالهرم | Contact & Location — Al-Haram, Giza",
       },
       {
         name: "description",
         content:
-          "عنوان وأرقام عيادات يوتوبيا لطب وتجميل وزراعة الأسنان في الدقي: ١١٦ شارع محيي الدين أبو العز، الطابق التاسع. هاتف: 01117655583. يومياً ٢ - ١٠ م.",
+          "عنوان وأرقام مركز دبي لطب الأسنان في الهرم: ٢٠ شارع عز الدين عمر، محطة العريش، برج المروة، خلف بنك مصر. هاتف: 01022013314. يومياً من ١ ظ إلى ١١ م.",
       },
     ],
   }),
@@ -39,11 +39,11 @@ function ContactPage() {
   return (
     <div className="min-h-screen bg-[#FBF9F4] text-[#0E1F1C]">
       <PageHero
-        title={isAr ? "تواصل مع عيادات يوتوبيا" : "Contact & Visit Dokki"}
+        title={isAr ? "تواصل مع مركز دبي لطب الأسنان" : "Contact & Visit Dubai Dental Clinic"}
         sub={
           isAr
-            ? "يسعدنا استقبال استفساراتكم ومواعيدكم يومياً من ٢:٠٠ ظهراً حتى ١٠:٠٠ مساءً في فرعنا بالدقي."
-            : "We welcome your inquiries and visits daily from 2:00 PM to 10:00 PM on the 9th floor in Dokki, Giza."
+            ? "يسعدنا استقبال استفساراتكم ومواعيدكم يومياً من ١:٠٠ ظهراً حتى ١١:٠٠ مساءً في فرعنا بالهرم (محطة العريش)."
+            : "We welcome your inquiries and visits daily from 1:00 PM to 11:00 PM at Al-Haram, Giza."
         }
         crumb={isAr ? "اتصل بنا" : "Contact"}
       />
@@ -55,7 +55,7 @@ function ContactPage() {
             <div className="rounded-3xl border border-[#C2A06A]/30 bg-white p-8 shadow-sm">
               <span className="eyebrow">
                 <MapPin className="w-3.5 h-3.5 text-[#C2A06A]" />
-                <span>{isAr ? "مقر العيادة بالدقي" : "Clinic Location"}</span>
+                <span>{isAr ? "مقر المركز بالهرم" : "Clinic Location"}</span>
               </span>
 
               <h2 className="mt-3 font-display text-2xl font-bold text-[#0E1F1C]">
@@ -136,8 +136,8 @@ function ContactPage() {
               {/* Embedded Google Map iframe */}
               <div className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl border border-[#C2A06A]/20 bg-[#F6F1E7]">
                 <iframe
-                  title="Utopia Dental Clinics Location"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.6496924840427!2d31.2030067!3d30.0468925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14584144365287f3%3A0x7d671239ce343868!2zMTE2INi02KfYsdi5INmF2K3ZitmKINin2YTYr9mK2YYg2KPYqNmIINin2YTYudiy2Iwg2KfZhNiv2YLZitiMINin2YTYrNmK2LLYqQ!5e0!3m2!1sar!2seg!4v1700000000000!5m2!1sar!2seg"
+                  title="Dubai Dental Clinic Location"
+                  src="https://maps.google.com/maps?q=29.99191,31.161962&hl=ar&z=17&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}

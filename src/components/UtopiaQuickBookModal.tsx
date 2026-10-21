@@ -37,7 +37,7 @@ export function UtopiaQuickBookModal() {
       setIsSubmitting(false);
       setIsOpen(false);
       toast.success(
-        "Thank you! Our Dokki care coordinator will contact you within 15 minutes."
+        "Thank you! Our Dubai Dental Clinic care coordinator will contact you shortly."
       );
       setName("");
       setPhone("");
@@ -64,7 +64,7 @@ export function UtopiaQuickBookModal() {
           </button>
 
           <span className="text-[11px] font-semibold tracking-wider uppercase text-blue-200 block mb-1">
-            Utopia Dental Clinics · Dokki
+            Dubai Dental Clinic · Al-Haram
           </span>
           <h3 className="text-xl sm:text-2xl font-bold">
             The First Step to Your Smile
@@ -185,11 +185,11 @@ export function UtopiaQuickBookModal() {
           <div className="flex items-center justify-between text-[11px] text-gray-500 pt-2 border-t border-gray-100">
             <span className="flex items-center gap-1">
               <Clock className="w-3.5 h-3.5 text-gray-400" />
-              <span>Daily 2 PM - 10 PM</span>
+              <span>Daily 1 PM - 11 PM</span>
             </span>
             <span className="flex items-center gap-1">
               <MapPin className="w-3.5 h-3.5 text-gray-400" />
-              <span>Dokki, 9th Floor</span>
+              <span>Al-Haram, 20 Ezz El-Din Omar</span>
             </span>
           </div>
         </form>

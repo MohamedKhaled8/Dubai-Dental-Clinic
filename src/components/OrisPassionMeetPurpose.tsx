@@ -80,13 +80,13 @@ export function OrisPassionMeetPurpose() {
         {/* Header */}
         <div className="flex flex-col items-center text-center mx-auto mb-[5vw] max-md:mb-10 max-w-3xl">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-[#3365e2] text-xs font-semibold mb-3">
-            <span>Utopia Clinical Standards · المعايير السريرية</span>
+            <span>Dubai Dental Clinical Standards · المعايير السريرية</span>
           </div>
           <h2 className="text-[3.8vw] max-[1025px]:text-[5.5vw] max-md:text-[7.5vw] font-normal leading-[1.15] text-[#13314a]">
             Where Passion Meets Purpose
           </h2>
           <p className="oris-text22 text-gray-600 mt-3 leading-relaxed">
-            Behind every healthy smile is a specialized medical team in Dokki,
+            Behind every healthy smile is a specialized medical team in Al-Haram,
             advanced sterilization protocols, and a commitment to genuine patient
             comfort.
           </p>

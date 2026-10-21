@@ -45,7 +45,7 @@ const cases: TransformationCase[] = [
     },
     shadeBefore: "Crowding Index: Severe",
     shadeAfter: "Alignment: Class I Ideal",
-    timeline: { ar: "متابعة دورية منتظمة بالدقي", en: "Structured monthly sessions" },
+    timeline: { ar: "متابعة دورية منتظمة بالهرم", en: "Structured monthly sessions" },
     highlights: {
       ar: "تقويم حديث مع أخصائي التقويم بالعيادة",
       en: "Specialist-guided biomechanics",
@@ -198,7 +198,7 @@ export function SmileComparisonSlider() {
                   {isAr ? "الحالة الأولية قبل الإجراء" : "Initial Presentation"}
                 </p>
                 <p className="text-[11px] text-white/70">
-                  {isAr ? "فحص سريري واستشارة بالدقي" : "Clinical consultation in Dokki"}
+                  {isAr ? "فحص سريري واستشارة بالهرم" : "Clinical consultation in Al-Haram"}
                 </p>
               </div>
             </div>

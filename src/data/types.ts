@@ -56,7 +56,9 @@ export interface Service {
   slug: string;
   name: L;
   tagline: L;
+  shortTagline?: L;
   iconName: string;
+  icon?: string;
   overview: L[];
   whoItIsFor: L[];
   whatToExpect: ServiceStep[];
@@ -116,14 +118,22 @@ export interface ProcessStep {
 export interface BookingRequest {
   id: string;
   createdAt: string;
-  serviceSlugs: string[];
-  doctorSlug: string | null;
-  preferredDate: string;
+  /** @deprecated use serviceIds */
+  serviceSlugs?: string[];
+  serviceIds: string[];
+  /** @deprecated use doctorId */
+  doctorSlug?: string | null;
+  doctorId: string | null;
+  /** @deprecated use date */
+  preferredDate?: string;
+  date: string;
   timeWindow: "afternoon" | "evening";
   patientName: string;
   phone: string;
   email?: string;
-  isForChild: boolean;
+  /** @deprecated use isChild */
+  isForChild?: boolean;
+  isChild: boolean;
   notes?: string;
   status: "new" | "contacted" | "confirmed" | "cancelled";
 }

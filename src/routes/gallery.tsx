@@ -15,18 +15,18 @@ import { useI18n } from "@/lib/i18n";
 import { getGalleryCases } from "@/lib/repository";
 import { PageHero } from "@/components/site";
 import { SmileComparisonSlider } from "@/components/SmileComparisonSlider";
-import type { GalleryCaseItem } from "@/data/types";
+import type { GalleryCase as GalleryCaseItem } from "@/data/types";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
     meta: [
       {
-        title: "معرض الابتسامات والنتائج السريرية | Smile Gallery — Utopia Dokki",
+        title: "معرض الابتسامات والنتائج السريرية | Smile Gallery — Dubai Dental Clinic",
       },
       {
         name: "description",
         content:
-          "معرض حالات ونتائج تجميل وزراعة وتقويم الأسنان في عيادات يوتوبيا بالدقي. نماذج توضيحية لخيارات الفينيرز والزيركونيا.",
+          "معرض حالات ونتائج تجميل وزراعة وتقويم الأسنان في عيادة دبي لطب الأسنان. نماذج سريرية لخيارات الفينيرز والزيركونيا وتصميم الابتسامة.",
       },
     ],
   }),
@@ -53,7 +53,7 @@ function GalleryPage() {
 
   const filteredCases = cases.filter((c) => {
     if (activeCategory === "all") return true;
-    return c.categorySlug === activeCategory;
+    return c.category === activeCategory;
   });
 
   return (
@@ -62,8 +62,8 @@ function GalleryPage() {
         title={isAr ? "معرض الابتسامات والنتائج السريرية" : "Smile Transformation Gallery"}
         sub={
           isAr
-            ? "استعراض لخيارات التجميل والزراعة والتقويم التخصصي بعيادات يوتوبيا بالدقي."
-            : "Explore aesthetic, implant, and orthodontic possibilities tailored to natural tooth symmetry and shades."
+            ? "استعراض لخيارات التجميل والزراعة والتقويم التخصصي بمركز دبي لطب الأسنان بالهرم."
+            : "Explore aesthetic, implant, and orthodontic possibilities tailored to natural tooth symmetry and shades at Al-Haram."
         }
         crumb={isAr ? "معرض الحالات" : "Gallery"}
       />
@@ -79,7 +79,7 @@ function GalleryPage() {
                 : "Clinical Notice — Illustrative Demonstration Samples: "}
             </span>
             {isAr
-              ? "البيانات والصور المعروضة في هذا المعرض نماذج تجريبية للمعاينة (Sample Cases)، وسيتم استبدالها لاحقاً بالحالات الفعلية الموثقة لمرضى عيادات يوتوبيا بعد الحصول على موافقتهم الخطية المسبقة."
+              ? "البيانات والصور المعروضة في هذا المعرض نماذج تجريبية للمعاينة (Sample Cases)، وسيتم استبدالها لاحقاً بالحالات الفعلية الموثقة لمرضى مركز دبي لطب الأسنان بعد الحصول على موافقتهم الخطية المسبقة."
               : "Cases displayed in this demonstration gallery are sample references and will be replaced with clinic-approved patient outcomes following written clinical consent."}
           </div>
         </div>
@@ -136,7 +136,7 @@ function GalleryPage() {
               <div>
                 <div className="flex items-center justify-between mb-4">
                   <span className="rounded-full bg-[#F6F1E7] border border-[#C2A06A]/30 px-3 py-1 text-[11px] font-bold text-[#16372F]">
-                    {c.categoryName[lang]}
+                    {c.category}
                   </span>
 
                   {c.isSample && (
@@ -163,12 +163,7 @@ function GalleryPage() {
                     <span className="text-[#16372F]/60">{isAr ? "بعد:" : "After:"}</span>
                     <span className="font-bold text-[#16372F]">{c.afterLabel[lang]}</span>
                   </div>
-                  {c.shadeAfter && (
-                    <div className="flex justify-between border-b border-[#C2A06A]/10 pb-1.5">
-                      <span className="text-[#16372F]/60">{isAr ? "درجة اللون:" : "Shade:"}</span>
-                      <span className="font-mono font-bold text-[#C2A06A]">{c.shadeAfter}</span>
-                    </div>
-                  )}
+
                   <div className="flex justify-between">
                     <span className="text-[#16372F]/60">{isAr ? "المدة المقدرة:" : "Duration:"}</span>
                     <span className="font-semibold text-[#0E1F1C]">{c.duration[lang]}</span>

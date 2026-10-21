@@ -205,7 +205,7 @@ export function UniversalSearchModal({ isOpen, onClose }: UniversalSearchModalPr
               </p>
               <p className="mt-1 text-xs text-[#52525b]">
                 {isAr
-                  ? "يمكنك التواصل مباشرة مع فريق العيادة بالدقي عبر واتساب لأي استفسار مخصص."
+                  ? "يمكنك التواصل مباشرة مع فريق العيادة بالهرم عبر واتساب لأي استفسار مخصص."
                   : "Contact our clinic concierge directly on WhatsApp for tailored medical guidance."}
               </p>
               <div className="mt-4 flex justify-center gap-2">
@@ -343,7 +343,7 @@ export function UniversalSearchModal({ isOpen, onClose }: UniversalSearchModalPr
 
           <div className="flex items-center gap-2">
             <span className="text-[11px] font-bold text-[#0f172a]">
-              {isAr ? "الدقي — شارع محيي الدين أبو العز" : "Dokki Clinic Lounge"}
+              {isAr ? "الهرم — شارع عز الدين عمر" : "Al-Haram Clinic Lounge"}
             </span>
           </div>
         </div>

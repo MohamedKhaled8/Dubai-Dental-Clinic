@@ -23,12 +23,12 @@ export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
       {
-        title: "من نحن | عيادات يوتوبيا لطب وتجميل وزراعة الأسنان بالدقي — About",
+        title: "من نحن | مركز دبي لطب وتجميل وزراعة الأسنان بالهرم — About",
       },
       {
         name: "description",
         content:
-          "تعرف على رؤية وفلسفة عيادات يوتوبيا لطب الأسنان بالدقي: رعاية متخصصة، استماع واضح، وتعقيم جراحي فائق في بيئة هادئة.",
+          "تعرف على رؤية وفلسفة مركز دبي لطب الأسنان بالهرم: رعاية متخصصة، استماع واضح، وتعقيم جراحي فائق في بيئة هادئة.",
       },
     ],
   }),
@@ -85,10 +85,10 @@ function AboutPage() {
       },
     },
     {
-      title: { ar: "إطلالة الطابق التاسع بالدقي", en: "Panoramic Dokki 9th Floor" },
+      title: { ar: "بيئة هادئة ومظلة بالهرم", en: "Calm Location at Al-Haram" },
       desc: {
         ar: "موقع هادئ بعيداً عن صخب الشارع، مع خصوصية تامة لكل جناح كشف وعلاج.",
-        en: "Elevated tranquility above street noise with dedicated private consultation suites.",
+        en: "Tranquil location near El-Arish station with dedicated private consultation suites.",
       },
     },
     {
@@ -103,11 +103,11 @@ function AboutPage() {
   return (
     <div className="min-h-screen bg-[#FBF9F4] text-[#0E1F1C]">
       <PageHero
-        title={isAr ? "عن عيادات يوتوبيا" : "About Utopia Dental"}
+        title={isAr ? "عن مركز دبي لطب الأسنان" : "About Dubai Dental Clinic"}
         sub={
           isAr
-            ? "بيئة رعاية سنية هادئة بالدقي تُعيد تعريف تجربة زيارة طبيب الأسنان بكل راحة وشفافية."
-            : "A quiet, patient-centered dental sanctuary in Dokki redefining clinical care through honesty, sterile mastery, and human empathy."
+            ? "بيئة رعاية سنية هادئة بالهرم تُعيد تعريف تجربة زيارة طبيب الأسنان بكل راحة وشفافية."
+            : "A quiet, patient-centered dental clinic in Al-Haram redefining clinical care through honesty, sterile mastery, and human empathy."
         }
         crumb={isAr ? "من نحن" : "About"}
       />
@@ -123,22 +123,22 @@ function AboutPage() {
               </span>
               <h2 className="mt-4 font-display text-3xl md:text-4xl font-bold text-[#0E1F1C]">
                 {isAr
-                  ? "يوتوبيا: المكان الهادئ للابتسامة المكتملة"
-                  : "Utopia: A Calm Sanctuary for Lasting Smiles"}
+                  ? "مركز دبي: مكانك لابتسامة مكتملة"
+                  : "Dubai Dental Clinic: A Calm Sanctuary for Lasting Smiles"}
               </h2>
             </div>
 
             <div>
               <p className="text-base md:text-lg leading-relaxed text-[#16372F]/80">
                 {isAr
-                  ? "تأسست عيادات يوتوبيا في قلب حي الدقي بالجيزة برؤية واحدة: توفير مساحة علاجية راقية تحترم وقت المراجع، وتزيل الرهبة المرتبطة بطب الأسنان، وتقدم حلولاً مستدامة بأيدي استشاريين متخصصين في زراعة وتجميل وتقويم الأسنان."
-                  : "Founded in the heart of Dokki, Giza, Utopia was established with a singular vision: to offer a refined clinical space that respects your time, eliminates dental fear, and delivers durable results through specialized consultants."}
+                  ? "تأسس مركز دبي لطب الأسنان في حي الطالبية بالهرم برؤية واحدة: توفير مساحة علاجية راقية تحترم وقت المراجع، وتزيل الرهبة المرتبطة بطب الأسنان، وتقدم حلولاً مستدامة بأيدي استشاريين متخصصين في زراعة وتجميل وتقويم الأسنان."
+                  : "Founded in the Talbiya neighborhood of Al-Haram, Giza, Dubai Dental Clinic was established with a singular vision: to offer a refined clinical space that respects your time, eliminates dental fear, and delivers durable results through specialized consultants."}
               </p>
               <div className="mt-6 flex flex-wrap items-center gap-3 text-xs text-[#16372F]/70">
                 <span className="flex h-2.5 w-2.5 rounded-full bg-emerald-500" />
-                <span>١١٦ شارع محيي الدين أبو العز، الطابق التاسع، الدقي</span>
+                <span>٢٠ شارع عز الدين عمر، محطة العريش، الهرم، الجيزة</span>
                 <span>•</span>
-                <span>يومياً ٢:٠٠ م – ١٠:٠٠ م</span>
+                <span>يومياً ١:٠٠ ظ – ١١:٠٠ م</span>
               </div>
             </div>
           </div>
@@ -153,7 +153,7 @@ function AboutPage() {
             <span>{isAr ? "قيمنا الأساسية" : "Core Values"}</span>
           </span>
           <h2 className="mt-2 font-display text-3xl font-bold text-[#0E1F1C]">
-            {isAr ? "معايير الرعاية في عيادات يوتوبيا" : "Our Standards of Clinical Excellence"}
+            {isAr ? "معايير الرعاية في مركز دبي لطب الأسنان" : "Our Standards of Clinical Excellence"}
           </h2>
         </div>
 
@@ -228,7 +228,7 @@ function AboutPage() {
               <span>{isAr ? "الفريق الطبي" : "Medical Team"}</span>
             </span>
             <h2 className="mt-2 font-display text-3xl font-bold text-[#0E1F1C]">
-              {isAr ? "استشاريو يوتوبيا بالدقي" : "Our Specialists"}
+              {isAr ? "استشاريو مركز دبي لطب الأسنان" : "Our Specialists"}
             </h2>
           </div>
 

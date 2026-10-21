@@ -27,12 +27,12 @@ export const Route = createFileRoute("/doctors/$slug")({
   head: () => ({
     meta: [
       {
-        title: "الملف السريري للطبيب | عيادات يوتوبيا لطب وجراحة وتجميل الأسنان بالدقي",
+        title: "الملف السريري للطبيب | مركز دبي لطب وجراحة وتجميل الأسنان بالهرم",
       },
       {
         name: "description",
         content:
-          "تعرف على الخبرات السريرية والمؤهلات الأكاديمية والتخصصات المعتمدة لأطباء عيادات يوتوبيا بالدقي.",
+          "تعرف على الخبرات السريرية والمؤهلات الأكاديمية والتخصصات المعتمدة لأطباء مركز دبي لطب الأسنان بالهرم.",
       },
     ],
   }),
@@ -102,10 +102,10 @@ function DoctorDetailPage() {
     (s) => doctor.services?.includes(s.slug) || doctor.services?.includes(s.id)
   );
 
-  const whatsappInquiryUrl = `https://wa.me/201117655583?text=${encodeURIComponent(
+  const whatsappInquiryUrl = `https://wa.me/201022013314?text=${encodeURIComponent(
     isAr
-      ? `مرحباً عيادات يوتوبيا، أود الاستفسار وحجز موعد مع: ${tr(doctor.name)} (${tr(doctor.role)})`
-      : `Hello Utopia Clinics, I would like to inquire about booking an appointment with: ${tr(doctor.name)}`
+      ? `مرحباً مركز دبي لطب الأسنان، أود الاستفسار وحجز موعد مع: ${tr(doctor.name)} (${tr(doctor.role)})`
+      : `Hello Dubai Dental Clinic, I would like to inquire about booking an appointment with: ${tr(doctor.name)}`
   )}`;
 
   return (
@@ -128,7 +128,7 @@ function DoctorDetailPage() {
                 {initials}
               </span>
               <div className="absolute -bottom-3 rounded-full bg-[#0E1F1C] px-3.5 py-1 text-[10px] font-bold text-[#C2A06A] border border-[#C2A06A]/40 shadow-xs">
-                {isAr ? "استشاري معتمد بالدقي" : "Certified Dokki Specialist"}
+                {isAr ? "استشاري معتمد بالمركز" : "Certified Specialist"}
               </div>
             </div>
 
@@ -268,8 +268,8 @@ function DoctorDetailPage() {
                   {isAr ? "ملاحظة طبية هامة: " : "Clinical Notice: "}
                 </span>
                 {isAr
-                  ? "يتم تحديد الخطة العلاجية والبدائل المناسبة لكل مراجع بناءً على الفحص السريري الدقيق والأشعة التشخيصية داخل عيادات يوتوبيا بالدقي."
-                  : "Treatment plans and appropriate options are determined after thorough clinical examination and diagnostic imaging at Utopia Dental Clinics Dokki."}
+                  ? "يتم تحديد الخطة العلاجية والبدائل المناسبة لكل مراجع بناءً على الفحص السريري الدقيق والأشعة التشخيصية داخل مركز دبي لطب الأسنان بالهرم."
+                  : "Treatment plans and appropriate options are determined after thorough clinical examination and diagnostic imaging at Dubai Dental Clinic Al-Haram."}
               </p>
             </div>
           </div>

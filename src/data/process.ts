@@ -5,8 +5,8 @@ export const processStepsData: ProcessStep[] = [
     step: 1,
     title: { ar: "الاستقبال الهادئ وضيافة المراجع", en: "Calm Welcome & Reception" },
     desc: {
-      ar: "مساحة استقبال مريحة في الطابق التاسع بالدقي مصممة لتهدئة الأعصاب وتجهيز ملفك الطبي بدقة.",
-      en: "A tranquil 9th-floor lounge designed to ease stress while your medical history is recorded.",
+      ar: "مساحة استقبال مريحة في مركز دبي لطب الأسنان بالهرم مصممة لتهدئة الأعصاب وتجهيز ملفك الطبي بدقة.",
+      en: "A tranquil clinic lounge in Al-Haram designed to ease stress while your medical history is recorded.",
     },
     detail: {
       ar: "استقبال دافئ، بدون تأخير أو ازدحام، مع مشروب ترحيبي وأجواء تبعدك تماماً عن التوتر المعتاد لعيادات الأسنان.",

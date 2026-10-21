@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "rea-analysis-ref",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["playwright", "open", "https://reodental.framer.website/"],
+      "port": 9222,
+      "url": "https://reodental.framer.website/"
+    }
+  ]
+}

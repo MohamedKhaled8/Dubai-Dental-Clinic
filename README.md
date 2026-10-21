@@ -1,14 +1,15 @@
-# Utopia Dental Clinics — Pixel-Faithful Build of Reference Design (Dokki, Giza)
+# Dubai Dental Clinic — Modern Web Platform (Al-Haram, Giza)
 
-A bilingual (Arabic RTL default + English LTR) pixel-faithful implementation of the reference dental care design for **Utopia Dental Clinics** (عيادات يوتوبيا لطب وتجميل وزراعة الأسنان), Dokki, Giza, Egypt.
+A bilingual (Arabic RTL default + English LTR) high-performance web platform for **Dubai Dental Clinic** (مركز دبي لطب الأسنان), 20 Ezz El-Din Omar St., Al-Haram, Giza, Egypt.
 
-### Visual Spec & Design Tokens
-- `--primary`: Royal Blue `#0B4FC7` (buttons, icons, accents, hero headline second line)
-- `--navy`: `#0B1B3A` (headings, body copy, footer bar)
-- `--tint`: `#EEF4FB` (light blue band behind Doctors and Contact sections)
-- `--card`: `#FFFFFF` with 1px border `#E3EAF3`, radius 10–12px, subtle shadow
-- Typography: Clean geometric sans (`Inter` for English; `IBM Plex Sans Arabic` & `Tajawal` for Arabic).
-- Original Utopia Logo: Vector tooth-and-arch outline mark in `#0B4FC7` + navy wordmark + blue caption.
+### Clinic Details
+- **Name**: مركز دبي لطب الأسنان / Dubai Dental Clinic
+- **Address**: ٢٠ شارع عز الدين عمر، متفرع من شارع الهرم (محطة العريش، برج المروة)، الطالبية، الهرم، الجيزة
+- **Phones**: 01022013314 / 01028665801
+- **WhatsApp**: [wa.me/201022013314](https://wa.me/201022013314)
+- **Hours**: Daily 1:00 PM – 11:00 PM (Friday by appointment)
+- **Rating**: 4.5 ★ (1,200+ Google Reviews)
+- **Medical Director**: د. كريم كمال محمد (Consultant Endodontics & Esthetics)
 
 ---
 
@@ -24,12 +25,12 @@ bun run dev  # or npm run dev
 ## 2. Swappable Data Architecture (`/src/data/` & `/src/lib/repository.ts`)
 
 All content is cleanly decoupled from UI components:
-- `clinic.ts`: Clinic metadata (Dokki address, phone `01117655583`, hours, Google rating 4.9 / 164 reviews [CONFIRM]).
-- `doctors.ts`: Confirmed medical team with monogram initials + hidden unconfirmed records (`visible: false, needsConfirmation: true`).
-- `services.ts`: All 10 specialized dental services with educational overviews, what to expect, and FAQs.
-- `reviews.ts`: Realistic sample patient reviews (`isSample: true`) linking to Google Maps.
-- `gallery.ts`: Demonstration cases (`isSample: true`) for the before/after slider.
-- `posts.ts`: 4 educational clinical blog articles.
+- `clinic.ts`: Clinic metadata (Al-Haram address, phone `01022013314`, hours, Google rating 4.5 / 1,200+ reviews).
+- `doctors.ts`: Confirmed medical team (Dr. Karim Kamal, Dr. Mostafa Abo El-Dahab, Dr. Ahmed Farouk).
+- `services.ts`: Specialized dental services with educational overviews, what to expect, and FAQs.
+- `reviews.ts`: Authentic patient reviews linking to Google Maps.
+- `gallery.ts`: Demonstration cases for the before/after slider.
+- `posts.ts`: Educational clinical blog articles.
 - `faqs.ts`: General patient FAQs.
 - `process.ts`: 5-step visit experience workflow.
 

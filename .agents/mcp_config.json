@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "ui-ux-pro-max": {
+      "command": "npx",
+      "args": ["-y", "ui-ux-pro-mcp"]
+    },
+    "context-mode": {
+      "command": "npx",
+      "args": ["-y", "context-mode"]
+    },
+    "agent-skills": {
+      "command": "npx",
+      "args": ["-y", "@tech-leads-club/agent-skills-mcp"]
+    }
+  }
+}

@@ -44,30 +44,30 @@ export function TopInfoBar() {
             <MapPin className="h-3.5 w-3.5" />
             <span>
               {isAr
-                ? "١١٦ شارع محيي الدين أبو العز، الطابق التاسع، الدقي، الجيزة"
-                : "116 Mohy El-Din Abu El-Ezz St., 9th Floor, Dokki, Giza"}
+                ? "٢٠ شارع عز الدين عمر، متفرع من شارع الهرم، الطالبية، الهرم، الجيزة"
+                : "20 Ezz El-Din Omar St., Al-Haram, Talbiya, Giza"}
             </span>
           </span>
 
           <a
-            href="tel:+201117655583"
+            href="tel:+201022013314"
             className="inline-flex items-center gap-1.5 opacity-90 hover:opacity-100 transition-opacity"
           >
             <Phone className="h-3.5 w-3.5" />
-            <span dir="ltr">0111 765 5583</span>
+            <span dir="ltr">010 2201 3314</span>
           </a>
 
           <a
-            href="mailto:utopiadental2023@gmail.com"
+            href={`mailto:${clinicData.email}`}
             className="hidden lg:inline-flex items-center gap-1.5 opacity-90 hover:opacity-100 transition-opacity"
           >
             <Mail className="h-3.5 w-3.5" />
-            <span>utopiadental2023@gmail.com</span>
+            <span>{clinicData.email}</span>
           </a>
 
           <span className="inline-flex items-center gap-1.5 opacity-90">
             <Clock className="h-3.5 w-3.5" />
-            <span>{isAr ? "يومياً ٢:٠٠ م – ١٠:٠٠ م" : "Daily 2:00 PM – 10:00 PM"}</span>
+            <span>{isAr ? "يومياً ١:٠٠ م – ١١:٠٠ م" : "Daily 1:00 PM – 11:00 PM"}</span>
           </span>
         </div>
 
@@ -138,7 +138,7 @@ export function Header() {
       <header className="sticky top-0 z-40 bg-white border-b border-[#E3EAF3] shadow-xs">
         <div className="container-x flex h-20 items-center justify-between gap-4">
           {/* Logo left */}
-          <Link to="/" className="shrink-0 flex items-center" aria-label="Utopia Dental Clinics">
+          <Link to="/" className="shrink-0 flex items-center" aria-label="Dubai Dental Clinic">
             <UtopiaLogo size="md" />
           </Link>
 
@@ -214,11 +214,11 @@ export function Header() {
                 </Link>
 
                 <a
-                  href="tel:+201117655583"
+                  href="tel:+201022013314"
                   className="flex items-center justify-center gap-2 w-full rounded-lg border border-[#0B4FC7] py-2.5 text-xs font-bold text-[#0B4FC7] hover:bg-[#EEF4FB]"
                 >
                   <Phone className="h-4 w-4" />
-                  <span>{isAr ? "اتصل بنا: 01117655583" : "Call Us: 0111 765 5583"}</span>
+                  <span>{isAr ? "اتصل بنا: 01022013314" : "Call Us: 010 2201 3314"}</span>
                 </a>
               </div>
             </nav>
@@ -240,15 +240,15 @@ export function Footer() {
     <footer className="w-full bg-[#0B1B3A] text-white py-6 border-t border-white/10 select-none">
       <div className="container-x flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-white/70">
         {/* Left: Small white logo */}
-        <Link to="/" className="flex items-center" aria-label="Utopia Dental Clinics">
+        <Link to="/" className="flex items-center" aria-label="Dubai Dental Clinic">
           <UtopiaLogo inverted compact size="sm" />
         </Link>
 
         {/* Center: Copyright */}
         <p className="text-center font-normal">
           {isAr
-            ? "© ٢٠٢٦ عيادات يوتوبيا لطب وتجميل وزراعة الأسنان بالدقي. جميع الحقوق محفوظة."
-            : "© 2026 Utopia Dental Clinics. All Rights Reserved."}
+            ? "© ٢٠٢٦ مركز دبي لطب الأسنان بالهرم. جميع الحقوق محفوظة."
+            : "© 2026 Dubai Dental Clinic. All Rights Reserved."}
         </p>
 
         {/* Right: Policy links */}

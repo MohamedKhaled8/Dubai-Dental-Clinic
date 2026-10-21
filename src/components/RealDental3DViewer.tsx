@@ -637,7 +637,7 @@ export function RealDental3DViewer() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-xs font-bold text-[#0f172a]">
-                  {isAr ? "استشارة أخصائي زراعة الأسنان بالدقي" : "Consult Dokki Implantologist"}
+                  {isAr ? "استشارة أخصائي زراعة الأسنان بمركز دبي" : "Consult Dubai Dental Implantologist"}
                 </p>
                 <p className="text-[11px] text-[#52525b]">
                   {isAr ? "فحص وأشعة ثلاثية الأبعاد CBCT" : "Comprehensive CBCT 3D Scan"}
@@ -645,7 +645,7 @@ export function RealDental3DViewer() {
               </div>
 
               <a
-                href="https://wa.me/201117655583?text=مرحباً%20عيادات%20يوتوبيا،%20أود%20استشارة%20بخصوص%20زراعة%20الأسنان%20والتركيبات"
+                href="https://wa.me/201022013314?text=مرحباً%20مركز%20دبي%20لطب%20الأسنان،%20أود%20استشارة%20بخصوص%20زراعة%20الأسنان%20والتركيبات"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary py-2.5 px-4 text-xs"

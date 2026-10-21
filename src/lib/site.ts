@@ -5,20 +5,20 @@ export type Lang = "ar" | "en";
 export type L = { ar: string; en: string };
 
 export const clinic = {
-  name: { ar: "عيادات يوتوبيا لطب وتجميل وزراعة الأسنان", en: "Utopia Dental Clinics" } as L,
-  short: { ar: "يوتوبيا", en: "Utopia" } as L,
-  phone: "01117655583",
-  phoneIntl: "+20 111 765 5583",
-  tel: "tel:+201117655583",
-  whatsapp: "https://wa.me/201117655583",
-  email: "utopiadental2023@gmail.com",
+  name: { ar: "مركز دبي لطب الأسنان", en: "Dubai Dental Clinic" } as L,
+  short: { ar: "دبي لطب الأسنان", en: "Dubai Dental" } as L,
+  phone: "01022013314",
+  phoneIntl: "+20 102 201 3314",
+  tel: "tel:+201022013314",
+  whatsapp: "https://wa.me/201022013314",
+  email: "info@dubaidentalclinic.com",
   address: {
-    ar: "116 شارع محيي الدين أبو العز، الطابق التاسع، الدقي، الجيزة، مصر.",
-    en: "116 Mohi El Din Abou El Ezz Street, 9th Floor, Dokki, Giza, Egypt.",
+    ar: "٢٠ شارع عز الدين عمر، متفرع من شارع الهرم (محطة العريش، برج المروة، بجوار حلواني بشبش وخلف بنك مصر)، الطالبية، الهرم، الجيزة، مصر.",
+    en: "20 Ezz El-Din Omar Street, Al-Haram (El-Arish Station, Al-Marwa Tower, next to Beshbesh Pastry & behind Banque Misr), Talbiya, Giza, Egypt.",
   } as L,
-  hours: { ar: "يوميًا، من 2:00 م حتى 10:00 م", en: "Daily, 2:00 PM – 10:00 PM" } as L,
-  maps: "https://maps.app.goo.gl/xLv9aDGJTvHRCSya7",
-  website: "https://utopiadent.com/",
+  hours: { ar: "يوميًا، من ١:٠٠ م حتى ١١:٠٠ م (الجمعة بموعد مسبق)", en: "Daily, 1:00 PM – 11:00 PM (Friday by appointment)" } as L,
+  maps: "https://maps.app.goo.gl/uvr71SPw8w17bNsC6",
+  website: "https://maps.app.goo.gl/uvr71SPw8w17bNsC6",
 };
 
 export type Service = {
@@ -37,8 +37,8 @@ export const services: Service[] = [
     icon: "Anchor",
     name: { ar: "زراعة الأسنان", en: "Dental Implants" },
     intro: {
-      ar: "حل ثابت لتعويض الأسنان المفقودة في الدقي.",
-      en: "A fixed option for replacing missing teeth, in Dokki.",
+      ar: "حل ثابت لتعويض الأسنان المفقودة في الهرم.",
+      en: "A fixed option for replacing missing teeth in Al-Haram.",
     },
     body: {
       ar: "الزرعة دعامة صغيرة توضع في عظم الفك لتحمل سنًا أو جسرًا. يبدأ الأمر بفحص وتقييم لحالة العظم واللثة لتحديد مدى ملاءمة الزراعة لك.",
@@ -226,42 +226,33 @@ export const draftServices = ["Teeth whitening", "Oral surgery", "Removable dent
 export type Doctor = { id: string; name: L; role: L; services: string[]; photo?: string };
 export const doctors: Doctor[] = [
   {
-    id: "ahmed-karam",
-    name: { ar: "د. أحمد كرم", en: "Dr. Ahmed Karam" },
-    role: { ar: "مدير العيادة", en: "Clinic Manager" },
-    services: [],
+    id: "karim-kamal",
+    name: { ar: "د. كريم كمال محمد", en: "Dr. Karim Kamal" },
+    role: {
+      ar: "مدير المركز وأخصائي علاج الجذور والأعصاب والتركيبات الثابتة",
+      en: "Clinic Director & Endodontics & Fixed Prosthodontics Specialist",
+    },
+    services: ["root-canal", "fixed-prosthesis", "dental-fillings"],
+    photo: "/src/assets/doctor-consultant.jpg",
   },
   {
-    id: "amr-adel",
-    name: { ar: "د. عمرو عادل", en: "Dr. Amr Adel" },
+    id: "mostafa-abo-eldahab",
+    name: { ar: "د. مصطفى أبو الدهب", en: "Dr. Mostafa Abo El-Dahab" },
     role: {
-      ar: "أخصائي زراعة الأسنان وجراحة الفم",
-      en: "Dental Implant & Oral Surgery Specialist",
+      ar: "استشاري جراحة الوجه والفكين وزراعة الأسنان",
+      en: "Consultant of Maxillofacial Surgery & Dental Implantology",
     },
     services: ["dental-implants"],
     photo: "/src/assets/doctor-consultant.jpg",
   },
   {
-    id: "ahmed-hany",
-    name: { ar: "د. أحمد هاني", en: "Dr. Ahmed Hany" },
+    id: "ahmed-farouk",
+    name: { ar: "د. أحمد فاروق", en: "Dr. Ahmed Farouk" },
     role: {
-      ar: "أخصائي زراعة الأسنان وجراحة الفم",
-      en: "Dental Implant & Oral Surgery Specialist",
+      ar: "أخصائي تقويم وتجميل الأسنان",
+      en: "Orthodontics & Aesthetic Dentistry Specialist",
     },
-    services: ["dental-implants"],
-    photo: "/src/assets/doctor-consultant.jpg",
-  },
-  {
-    id: "sherif-fathy",
-    name: { ar: "د. شريف فتحي", en: "Dr. Sherif Fathy" },
-    role: { ar: "أخصائي تقويم الأسنان", en: "Orthodontics Specialist" },
-    services: ["orthodontics"],
-  },
-  {
-    id: "omar-makhlouf",
-    name: { ar: "د. عمر مخلوف", en: "Dr. Omar Makhlouf" },
-    role: { ar: "أخصائي طب أسنان الأطفال", en: "Pediatric Dentistry Specialist" },
-    services: ["pediatric-dentistry"],
+    services: ["orthodontics", "dental-veneers"],
     photo: "/src/assets/doctor-female.jpg",
   },
 ];
@@ -334,8 +325,8 @@ export const t = {
     en: "Exceptional Dental Care. Confident Smiles.",
   },
   heroSub: {
-    ar: "عيادات أسنان في الدقي تقدم الزراعة والتقويم وطب أسنان الأطفال والتجميل في مكان واحد.",
-    en: "A dental clinic in Dokki offering implants, orthodontics, pediatric and cosmetic dentistry under one roof.",
+    ar: "مركز دبي لطب الأسنان في الهرم يقدم زراعة وتقويم وعلاج الجذور والتركيبات الثابتة وتجميل الأسنان في مكان واحد.",
+    en: "Dubai Dental Clinic in Al-Haram, Giza offering implants, orthodontics, root canals, and cosmetic dentistry under one roof.",
   },
   introEyebrow: { ar: "عن العيادة", en: "The clinic" },
   introTitle: {
@@ -355,19 +346,19 @@ export const t = {
   },
   reviewsTitle: { ar: "آراء المرضى", en: "Patient reviews" },
   reviewsBody: {
-    ar: "اقرأ تجارب المرضى الحقيقية مباشرة على صفحتنا في خرائط جوجل.",
-    en: "Read genuine patient experiences directly on our Google Maps listing.",
+    ar: "اقرأ تجارب المرضى الحقيقية مباشرة على صفحتنا في خرائط جوجل وفيزيتا.",
+    en: "Read genuine patient experiences directly on our Google Maps and Vezeeta listings.",
   },
   reviewsCta: { ar: "اقرأ التقييمات على جوجل", en: "Read reviews on Google" },
-  whyTitle: { ar: "لماذا يوتوبيا", en: "Why Utopia" },
+  whyTitle: { ar: "لماذا مركز دبي لطب الأسنان", en: "Why Dubai Dental Clinic" },
   why: [
-    { ar: "عشر خدمات أسنان في مكان واحد", en: "Ten dental services in one place" },
+    { ar: "منظومة علاجية متكاملة لطب وجراحة وتجميل الأسنان", en: "Comprehensive dental surgical & cosmetic care" },
     {
-      ar: "أطباء متخصصون في الزراعة والتقويم والأطفال",
-      en: "Specialists in implants, orthodontics and pediatrics",
+      ar: "نخبة من الاستشاريين في علاج الجذور والزراعة والتقويم",
+      en: "Specialists in endodontics, implants and orthodontics",
     },
-    { ar: "مواعيد يومية من 2 م حتى 10 م", en: "Open daily, 2 PM – 10 PM" },
-    { ar: "موقع مركزي في الدقي، الجيزة", en: "Central location in Dokki, Giza" },
+    { ar: "أكثر من 1,200 مراجع بتقييم 4.5 نجوم", en: "Over 1,200 verified reviews with 4.5★ rating" },
+    { ar: "موقع متميز بشارع عز الدين عمر متفرع من شارع الهرم", en: "Central location on Ezz El-Din Omar St., Al-Haram" },
   ],
   contactTitle: { ar: "احجز زيارتك", en: "Plan your visit" },
   phone: { ar: "الهاتف", en: "Phone" },
@@ -408,10 +399,10 @@ export const t = {
   after: { ar: "بعد", en: "After" },
   close: { ar: "إغلاق", en: "Close" },
   rights: {
-    ar: "نموذج تصميم مستقل — ليس الموقع الرسمي.",
-    en: "Independent design concept — not the official website.",
+    ar: "جميع الحقوق محفوظة © مركز دبي لطب الأسنان",
+    en: "All rights reserved © Dubai Dental Clinic",
   },
-  aboutTitle: { ar: "عن عيادات يوتوبيا", en: "About Utopia Dental Clinics" },
+  aboutTitle: { ar: "عن مركز دبي لطب الأسنان", en: "About Dubai Dental Clinic" },
   philosophyTitle: { ar: "فلسفتنا في العلاج", en: "Our treatment philosophy" },
   philosophy: {
     ar: "علاج مبني على الفحص الدقيق والشرح الواضح واحترام وقتك وراحتك. لا نعد بنتائج مضمونة، بل نلتزم برعاية أمينة.",

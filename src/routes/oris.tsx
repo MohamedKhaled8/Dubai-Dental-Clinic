@@ -5,12 +5,12 @@ export const Route = createFileRoute("/oris")({
   head: () => ({
     meta: [
       {
-        title: "Utopia Dental Clinics — Calm, Specialist Care in Dokki | عيادات يوتوبيا",
+        title: "مركز دبي لطب الأسنان — رعاية تخصصية بالهرم | Dubai Dental Clinic",
       },
       {
         name: "description",
         content:
-          "Specialist dental care in Dokki, Giza: 3D guided implants, clear aligners, pediatric dentistry, and veneers on the 9th floor of 116 Mohy El-Din Abu El-Ezz. Call 01117655583.",
+          "Specialist dental care in Al-Haram, Giza: 3D dental implants, clear aligners, root canals, and veneers at 20 Ezz El-Din Omar St. Call 01022013314.",
       },
     ],
   }),

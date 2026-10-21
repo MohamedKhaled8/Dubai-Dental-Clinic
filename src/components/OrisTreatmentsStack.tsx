@@ -95,7 +95,7 @@ export function OrisTreatmentsStack() {
           Specialist Dental Treatments
         </h2>
         <p className="oris-text22 mt-2 text-slate-600 max-w-2xl">
-          Personalized clinical care performed by certified consultants at Utopia Clinics Dokki.
+          Personalized clinical care performed by certified consultants at Dubai Dental Clinic Al-Haram.
         </p>
       </div>
 

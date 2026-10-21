@@ -12,12 +12,12 @@ export const Route = createFileRoute("/services/")({
   head: () => ({
     meta: [
       {
-        title: "خدمات طب وتجميل وزراعة الأسنان بالدقي | Dental Services — Utopia Dokki",
+        title: "خدمات طب وتجميل وزراعة الأسنان بالهرم | Dental Services — Dubai Dental Clinic",
       },
       {
         name: "description",
         content:
-          "تعرف على خدمات عيادات يوتوبيا العشر: زراعة الأسنان، تقويم الأسنان، أسنان الأطفال، الفينيرز، علاج الجذور، علاج اللثة، والتركيبات الثابتة بالدقي.",
+          "تعرف على خدمات مركز دبي لطب الأسنان: زراعة الأسنان، تقويم الأسنان، طب الأسنان التجميلي، الفينيرز، علاج الجذور، علاج اللثة، والتركيبات الثابتة بالهرم.",
       },
     ],
   }),
@@ -67,8 +67,8 @@ function ServicesIndexPage() {
         title={isAr ? "خدمات طب وتجميل وزراعة الأسنان" : "Clinical & Aesthetic Services"}
         sub={
           isAr
-            ? "منظومة علاجية متكاملة تحت إشراف استشاريي يوتوبيا بالدقي، وفق أعلى معايير التعقيم والجودة."
-            : "A comprehensive clinical suite delivered by certified specialists in Dokki under strict European sterilization protocols."
+            ? "منظومة علاجية متكاملة تحت إشراف نخبة من الاستشاريين بمركز دبي لطب الأسنان بالهرم، وفق أعلى معايير التعقيم والجودة."
+            : "A comprehensive clinical suite delivered by certified specialists in Al-Haram under strict sterilization protocols."
         }
         crumb={isAr ? "الخدمات" : "Services"}
       />

@@ -32,12 +32,12 @@ export const Route = createFileRoute("/services/$slug")({
   head: () => ({
     meta: [
       {
-        title: "تفاصيل الإجراء العلاجي | عيادات يوتوبيا لطب وتجميل وزراعة الأسنان بالدقي",
+        title: "تفاصيل الإجراء العلاجي | مركز دبي لطب وتجميل وزراعة الأسنان بالهرم",
       },
       {
         name: "description",
         content:
-          "شرح سريري مفصل ومراحل العلاج والأسئلة الشائعة بعيادات يوتوبيا بالدقي تحت إشراف نخبة من الاستشاريين.",
+          "شرح سريري مفصل ومراحل العلاج والأسئلة الشائعة بمركز دبي لطب الأسنان بالهرم تحت إشراف نخبة من الاستشاريين.",
       },
     ],
   }),
@@ -121,10 +121,10 @@ function ServiceDetailPage() {
   // Other services for navigation
   const otherServices = allServices.filter((s) => s.slug !== service.slug).slice(0, 4);
 
-  const whatsappInquiryUrl = `https://wa.me/201117655583?text=${encodeURIComponent(
+  const whatsappInquiryUrl = `https://wa.me/201022013314?text=${encodeURIComponent(
     isAr
-      ? `مرحباً عيادات يوتوبيا، أود الاستفسار وحجز استشارة بخصوص: ${tr(service.name)}`
-      : `Hello Utopia Clinics, I would like to inquire about and book a consultation for: ${tr(service.name)}`
+      ? `مرحباً مركز دبي لطب الأسنان، أود الاستفسار وحجز استشارة بخصوص: ${tr(service.name)}`
+      : `Hello Dubai Dental Clinic, I would like to inquire about and book a consultation for: ${tr(service.name)}`
   )}`;
 
   return (
@@ -247,7 +247,7 @@ function ServiceDetailPage() {
                 </div>
 
                 <h2 className="mt-3 font-serif text-2xl font-bold text-[#0E1F1C] mb-6">
-                  {isAr ? "إجابات أطباء واستشاريي يوتوبيا" : "Specialist Clinical Answers"}
+                  {isAr ? "إجابات أطباء واستشاريي مركز دبي لطب الأسنان" : "Specialist Clinical Answers"}
                 </h2>
 
                 <div className="space-y-3.5">
@@ -295,8 +295,8 @@ function ServiceDetailPage() {
                   {isAr ? "تنويه طبي هام: " : "Clinical Notice: "}
                 </span>
                 {isAr
-                  ? "تُحدد الخطط العلاجية والتكاليف ومدد العلاج بدقة فقط بعد الفحص السريري والأشعة التشخيصية ثلاثية الأبعاد (CBCT) من قِبل الطبيب المختص داخل عيادات يوتوبيا بالدقي."
-                  : "Treatment plans, durations, and costs are determined strictly after clinical examination and diagnostic 3D imaging (CBCT) by the attending specialist at Utopia Dental Clinics Dokki."}
+                  ? "تُحدد الخطط العلاجية والتكاليف ومدد العلاج بدقة فقط بعد الفحص السريري والأشعة التشخيصية ثلاثية الأبعاد (CBCT) من قِبل الطبيب المختص داخل مركز دبي لطب الأسنان بالهرم."
+                  : "Treatment plans, durations, and costs are determined strictly after clinical examination and diagnostic 3D imaging (CBCT) by the attending specialist at Dubai Dental Clinic Al-Haram."}
               </p>
             </div>
           </div>

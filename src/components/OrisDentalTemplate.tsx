@@ -145,7 +145,7 @@ export function OrisDentalTemplate() {
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                     <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
                   </span>
-                  <span className="tracking-wide">Dokki, Giza · 116 Mohy El-Din Abu El-Ezz (9th Fl.)</span>
+                  <span className="tracking-wide">Al-Haram, Giza · 20 Ezz El-Din Omar St.</span>
                 </div>
 
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-medium tracking-tight text-white leading-[1.12] max-w-xl">
@@ -183,7 +183,7 @@ export function OrisDentalTemplate() {
               {/* Right Column */}
               <div className="w-1/2 mt-auto max-[1025px]:mt-0 max-[1025px]:w-full flex gap-4 items-end max-[1025px]:items-start justify-end pb-8 max-[1025px]:pb-0 flex-col">
                 <p className="max-w-md text-white/95 text-xs sm:text-sm leading-relaxed font-light">
-                  Our clinical treatments in Dokki are designed around complete
+                  Our clinical treatments in Al-Haram are designed around complete
                   pain prevention: from routine ultrasonic cleanings to computer-guided
                   titanium implants and bespoke cosmetic restorations.
                 </p>
@@ -196,13 +196,13 @@ export function OrisDentalTemplate() {
                   <div className="mb-4">
                     <div className="flex items-center gap-1.5 text-amber-500 text-xs font-semibold mb-1">
                       <Star className="w-4 h-4 fill-amber-400 text-amber-400" />
-                      <span>4.9 / 5.0 · 164+ Google Reviews</span>
+                      <span>4.5 / 5.0 · 1,200+ Google Reviews</span>
                     </div>
                     <h3 className="text-2xl font-bold text-[#0B1B3A] tracking-tight">
                       Join 5000+
                     </h3>
                     <p className="text-xs font-medium text-slate-500 mt-0.5">
-                      Satisfied patients in Dokki & Giza
+                      Satisfied patients in Al-Haram & Giza
                     </p>
                   </div>
 
@@ -254,7 +254,7 @@ export function OrisDentalTemplate() {
                   <span>Who We Are · من نحن</span>
                 </div>
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-[#0B1B3A] leading-[1.18]">
-                  Calm, Artful Dental Care in the Heart of Dokki
+                  Calm, Artful Dental Care in the Heart of Al-Haram
                 </h2>
                 <p className="text-slate-500 text-sm mt-3 leading-relaxed">
                   A specialist practice dedicated to gentle hands, advanced 3D technology, and patient peace of mind.
@@ -263,16 +263,16 @@ export function OrisDentalTemplate() {
 
               <div className="lg:col-span-7 lg:pl-6 space-y-4">
                 <p className="text-slate-700 text-base sm:text-lg lg:text-xl font-normal leading-relaxed">
-                  At Utopia Dental Clinics, under the clinical leadership of <strong className="font-semibold text-[#0B1B3A]">Dr. Ahmed Karam</strong> and our multidisciplinary team of 8+ specialized consultants, we believe everyone deserves a healthy, confident smile without dental anxiety.
+                  At Dubai Dental Clinic, under the clinical leadership of <strong className="font-semibold text-[#0B1B3A]">Dr. Karim Kamal</strong> and our multidisciplinary team of specialized consultants, we believe everyone deserves a healthy, confident smile without dental anxiety.
                 </p>
                 <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-                  Located on the 9th floor of 116 Mohy El-Din Abu El-Ezz, we integrate in-house 3D CBCT digital imaging, computer-guided implant surgery, hospital-grade sterilization, and personalized treatment schedules crafted around your comfort and budget.
+                  Located at 20 Ezz El-Din Omar St., Al-Haram (El-Arish Station), we integrate in-house 3D CBCT digital imaging, computer-guided implant surgery, hospital-grade sterilization, and personalized treatment schedules crafted around your comfort and budget.
                 </p>
 
                 <div className="pt-2 flex flex-wrap gap-2.5 text-xs font-medium text-slate-700">
                   <span className="px-3 py-1.5 rounded-lg bg-slate-50 border border-slate-200">✓ In-House 3D CBCT Scans</span>
                   <span className="px-3 py-1.5 rounded-lg bg-slate-50 border border-slate-200">✓ 100% Sterile Hospital Protocols</span>
-                  <span className="px-3 py-1.5 rounded-lg bg-slate-50 border border-slate-200">✓ 8+ Certified Consultants</span>
+                  <span className="px-3 py-1.5 rounded-lg bg-slate-50 border border-slate-200">✓ Certified Consultants</span>
                 </div>
               </div>
             </div>
@@ -285,18 +285,18 @@ export function OrisDentalTemplate() {
                 delay={0}
               />
               <OrisStatCounter
-                value="8+"
+                value="10+"
                 label="Board-Certified Dental Specialists"
                 delay={0.15}
               />
               <OrisStatCounter
-                value="4.9"
-                label="Google Star Rating (164+ Reviews)"
+                value="4.5"
+                label="Google Star Rating (1,200+ Reviews)"
                 delay={0.3}
               />
               <OrisStatCounter
                 value="99%"
-                label="Patient Satisfaction in Dokki"
+                label="Patient Satisfaction in Al-Haram"
                 delay={0.45}
               />
             </div>
@@ -315,7 +315,7 @@ export function OrisDentalTemplate() {
           >
             <div className="absolute inset-0 w-full h-full will-change-transform">
               <img
-                alt="Utopia Dental clinic Dokki interior"
+                alt="Dubai Dental Clinic Al-Haram interior"
                 src="/oris/parallax.webp"
                 className="w-full h-full object-cover brightness-85"
               />
@@ -323,7 +323,7 @@ export function OrisDentalTemplate() {
             </div>
             <div className="relative z-10 text-center max-w-3xl oris-paddx">
               <span className="text-xs font-semibold tracking-wider uppercase text-blue-200 block mb-2">
-                Dokki Specialist Care · 9th Floor
+                Al-Haram Specialist Care · Ezz El-Din Omar
               </span>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-normal text-white leading-relaxed drop-shadow-md">
                 Gentle, personalized care designed to preserve your natural smile

@@ -42,20 +42,20 @@ export const Route = createFileRoute("/utopia")({
   head: () => ({
     meta: [
       {
-        title: "عيادات يوتوبيا لطب وتجميل وزراعة الأسنان بالدقي | Utopia Dental Clinics",
+        title: "مركز دبي لطب وتجميل وزراعة الأسنان بالهرم | Dubai Dental Clinic",
       },
       {
         name: "description",
         content:
-          "عيادات يوتوبيا لطب وتجميل وزراعة الأسنان في الدقي، الجيزة. تجربة علاجية هادئة وفائقة التعقيم تحت إشراف نخبة من الاستشاريين. احجز استشارتك الآن.",
+          "مركز دبي لطب وتجميل وزراعة الأسنان في الهرم، الجيزة (محطة العريش، برج المروة). تجربة علاجية مريحة وفائقة التعقيم تحت إشراف نخبة من الاستشاريين. احجز استشارتك الآن.",
       },
       {
         property: "og:title",
-        content: "عيادات يوتوبيا لطب الأسنان بالدقي | Utopia Dental Clinics",
+        content: "مركز دبي لطب الأسنان بالهرم | Dubai Dental Clinic",
       },
       {
         property: "og:description",
-        content: "Calm Care, Confident Smiles. Specialist Dental Clinics in Dokki, Giza.",
+        content: "Specialist Dental Care & Implantology in Al-Haram, Giza.",
       },
     ],
   }),
@@ -119,12 +119,12 @@ function HomePage() {
       await createBooking({
         patientName: formName.trim(),
         phone: formPhone.trim(),
-        email: formEmail.trim() || undefined,
-        serviceSlugs: [formService],
-        doctorSlug: null,
-        preferredDate: formDate || new Date().toISOString().split("T")[0],
+        ...(formEmail.trim() ? { email: formEmail.trim() } : {}),
+        serviceIds: [formService],
+        doctorId: null,
+        date: formDate ? formDate : (new Date().toISOString().split("T")[0] ?? ""),
         timeWindow: formTime,
-        isForChild: formService === "pediatric-dentistry",
+        isChild: formService === "pediatric-dentistry",
       });
       setFormSubmitted(true);
     } catch (err) {
@@ -197,7 +197,7 @@ function HomePage() {
 
               <p className="mt-4 text-sm sm:text-base text-[#5B6B84] leading-relaxed max-w-lg">
                 {isAr
-                  ? "نجمع بين أحدث التقنيات الطبية المتطورة والرعاية الطبية الفائقة لنمنحك الابتسامة المشرقة التي تستحقها في عيادات يوتوبيا بالدقي."
+                  ? "نجمع بين أحدث التقنيات الطبية المتطورة والرعاية الطبية الفائقة لنمنحك الابتسامة المشرقة التي تستحقها في مركز دبي لطب الأسنان بالهرم."
                   : "We combine advanced technology with compassionate care to give you the smile you deserve."}
               </p>
 
@@ -212,7 +212,7 @@ function HomePage() {
                 </Link>
 
                 <a
-                  href="tel:+201117655583"
+                  href="tel:+201022013314"
                   className="inline-flex items-center justify-center gap-2 rounded-lg border-2 border-[#0B4FC7] bg-white px-6 py-3.5 text-xs font-bold text-[#0B4FC7] hover:bg-[#EEF4FB] active:scale-98 transition-all uppercase tracking-wider"
                 >
                   <Phone className="h-4 w-4" />
@@ -274,16 +274,16 @@ function HomePage() {
                     </h4>
                     <p className="mt-1 text-[11px] text-[#5B6B84]">
                       {isAr
-                        ? "شكراً لتواصلك مع عيادات يوتوبيا. سيتصل بك فريق الاستقبال لتأكيد الوقت."
+                        ? "شكراً لتواصلك مع مركز دبي لطب الأسنان. سيتصل بك فريق الاستقبال لتأكيد الوقت."
                         : "Thank you. Our team will call you promptly to confirm your visit."}
                     </p>
 
                     <div className="mt-3 space-y-1.5">
                       <a
-                        href={`https://wa.me/201117655583?text=${encodeURIComponent(
+                        href={`https://wa.me/201022013314?text=${encodeURIComponent(
                           isAr
-                            ? `مرحباً عيادات يوتوبيا، قمت بطلب حجز موعد باسم ${formName} لخدمة ${formService}`
-                            : `Hello Utopia Clinics, I submitted a booking request under name ${formName} for ${formService}`
+                            ? `مرحباً مركز دبي لطب الأسنان، قمت بطلب حجز موعد باسم ${formName} لخدمة ${formService}`
+                            : `Hello Dubai Dental Clinic, I submitted a booking request under name ${formName} for ${formService}`
                         )}`}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -398,15 +398,15 @@ function HomePage() {
                         : "BOOK NOW"}
                     </button>
 
-                    {/* Below: "Or call us 0111 765 5583" */}
+                    {/* Below: "Or call us 010 2201 3314" */}
                     <p className="text-center text-[11px] text-[#5B6B84] pt-0.5">
                       {isAr ? "أو اتصل بنا مباشرة: " : "Or call us "}
                       <a
-                        href="tel:+201117655583"
+                        href="tel:+201022013314"
                         className="font-bold text-[#0B4FC7] hover:underline"
                         dir="ltr"
                       >
-                        (0111) 765 5583
+                        010 2201 3314
                       </a>
                     </p>
                   </form>
@@ -431,8 +431,8 @@ function HomePage() {
             </h2>
             <p className="mt-3 text-xs sm:text-sm text-[#5B6B84] leading-relaxed">
               {isAr
-                ? "عشر خدمات تخصصية في مكان واحد بالدقي بأحدث الأجهزة وتقنيات التعقيم الأوروبية."
-                : "Ten specialized clinical departments under one roof in Dokki with modern digital diagnostics."}
+                ? "عشر خدمات تخصصية في مكان واحد بالهرم بأحدث الأجهزة وتقنيات التعقيم الأوروبية."
+                : "Ten specialized clinical departments under one roof in Al-Haram with modern digital diagnostics."}
             </p>
           </div>
 
@@ -583,8 +583,8 @@ function HomePage() {
             </h2>
             <p className="mt-3 text-xs sm:text-sm text-[#5B6B84]">
               {isAr
-                ? "أطباء واستشاريون معتمدون يشرفون على خطتك العلاجية في عيادات يوتوبيا بالدقي."
-                : "Certified specialists and consultants supervising multidisciplinary dental care in Dokki."}
+                ? "أطباء واستشاريون معتمدون يشرفون على خطتك العلاجية في مركز دبي لطب الأسنان بالهرم."
+                : "Certified specialists and consultants supervising multidisciplinary dental care in Al-Haram."}
             </p>
           </div>
 
@@ -646,18 +646,18 @@ function HomePage() {
               {isAr ? "آراء المرضى" : "PATIENT TESTIMONIALS"}
             </span>
             <h2 className="mt-2 text-3xl sm:text-4xl font-extrabold text-[#0B1B3A] tracking-tight">
-              {isAr ? "تجارب مراجعينا في عيادات يوتوبيا" : "What Our Patients Say"}
+              {isAr ? "تجارب مراجعينا في مركز دبي لطب الأسنان" : "What Our Patients Say"}
             </h2>
             <p className="mt-3 text-xs sm:text-sm text-[#5B6B84]">
               {isAr
-                ? "تقييم 4.9 من 5 بناءً على 164 مراجعة معتمدة على خرائط جوجل."
-                : "Rated 4.9 / 5 from 164 patient reviews on Google Maps."}
+                ? "تقييم 4.5 من 5 بناءً على أكثر من 1,200 مراجعة معتمدة على خرائط جوجل."
+                : "Rated 4.5 / 5 from 1,200+ patient reviews on Google Maps."}
             </p>
           </div>
 
           {/* Carousel Cards (3 visible) */}
           <div className="grid gap-6 md:grid-cols-3">
-            {visibleReviews.map((rev) => (
+            {visibleReviews.filter(Boolean).map((rev) => rev && (
               <div
                 key={rev.id}
                 className="flex flex-col justify-between rounded-xl border border-[#E3EAF3] bg-white p-6 shadow-xs hover:shadow-md transition-all"
@@ -836,8 +836,8 @@ function HomePage() {
               </h2>
               <p className="mt-3 text-xs sm:text-sm text-[#5B6B84] leading-relaxed max-w-md">
                 {isAr
-                  ? "يسعدنا الرد على جميع استفساراتكم وحجز المواعيد طوال أيام الأسبوع في موقعنا المتميز بالدقي."
-                  : "We welcome all your inquiries and appointment requests throughout the week at our central Dokki location."}
+                  ? "يسعدنا الرد على جميع استفساراتكم وحجز المواعيد طوال أيام الأسبوع في موقعنا المتميز بالهرم."
+                  : "We welcome all your inquiries and appointment requests throughout the week at our central Al-Haram location."}
               </p>
 
               {/* Rows with Icons */}
@@ -852,11 +852,11 @@ function HomePage() {
                       {isAr ? "الهاتف والمحادثات" : "Phone & WhatsApp"}
                     </p>
                     <a
-                      href="tel:+201117655583"
+                      href="tel:+201022013314"
                       className="font-bold text-[#0B1B3A] hover:text-[#0B4FC7]"
                       dir="ltr"
                     >
-                      +20 111 765 5583
+                      01022013314 / 01028665801
                     </a>
                   </div>
                 </div>
@@ -871,10 +871,10 @@ function HomePage() {
                       {isAr ? "البريد الإلكتروني" : "Email Address"}
                     </p>
                     <a
-                      href="mailto:utopiadental2023@gmail.com"
+                      href={`mailto:${clinicData.email}`}
                       className="font-bold text-[#0B1B3A] hover:text-[#0B4FC7]"
                     >
-                      utopiadental2023@gmail.com
+                      {clinicData.email}
                     </a>
                   </div>
                 </div>
@@ -886,12 +886,12 @@ function HomePage() {
                   </div>
                   <div>
                     <p className="text-[11px] font-bold text-[#5B6B84] uppercase">
-                      {isAr ? "العنوان بالدقي" : "Clinic Address"}
+                      {isAr ? "العنوان بالهرم" : "Clinic Address"}
                     </p>
                     <p className="font-bold text-[#0B1B3A]">
                       {isAr
-                        ? "١١٦ شارع محيي الدين أبو العز، الطابق التاسع، الدقي، الجيزة"
-                        : "116 Mohy El-Din Abu El-Ezz St., 9th Floor, Dokki, Giza"}
+                        ? "٢٠ شارع عز الدين عمر، متفرع من شارع الهرم (محطة العريش، برج المروة)، الطالبية، الهرم، الجيزة"
+                        : "20 Ezz El-Din Omar St., Al-Haram (El-Arish Station, Al-Marwa Tower), Talbiya, Giza"}
                     </p>
                   </div>
                 </div>
@@ -906,7 +906,7 @@ function HomePage() {
                       {isAr ? "مواعيد العمل" : "Working Hours"}
                     </p>
                     <p className="font-bold text-[#0B1B3A]">
-                      {isAr ? "يومياً من ٢:٠٠ ظهراً حتى ١٠:٠٠ مساءً" : "Daily 2:00 PM – 10:00 PM"}
+                      {isAr ? "يومياً من ١:٠٠ ظهراً حتى ١١:٠٠ مساءً (الجمعة بموعد مسبق)" : "Daily 1:00 PM – 11:00 PM (Friday by appointment)"}
                     </p>
                   </div>
                 </div>
@@ -917,8 +917,8 @@ function HomePage() {
             <div className="relative h-[380px] sm:h-[420px] rounded-xl overflow-hidden border border-[#E3EAF3] shadow-sm">
               {/* Google Map iframe */}
               <iframe
-                title="Utopia Dental Clinics Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.649539316024!2d31.2012015!3d30.0469037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14584126786c67ef%3A0xc03e6f98c76dae9!2s116%20Mohi%20El-Din%20Abou%20El-Ezz%2C%20Ad%20Doqi%2C%20Dokki%2C%20Giza%20Governorate!5e0!3m2!1sen!2seg!4v1716000000000!5m2!1sen!2seg"
+                title="Dubai Dental Clinic Location"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.8967912444585!2d31.1619623!3d29.9919106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145845dd10a6f81d%3A0x6fb462b016f4d972!2sDubai%20dental%20center!5e0!3m2!1sen!2seg!4v1716000000000!5m2!1sen!2seg"
                 className="w-full h-full border-0"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
@@ -927,12 +927,12 @@ function HomePage() {
               {/* Overlay White Card */}
               <div className="absolute bottom-4 start-4 end-4 sm:end-auto sm:max-w-xs rounded-lg border border-[#E3EAF3] bg-white p-4 shadow-md">
                 <h4 className="font-bold text-xs sm:text-sm text-[#0B1B3A]">
-                  {isAr ? "عيادات يوتوبيا لطب الأسنان" : "Utopia Dental Clinics"}
+                  {isAr ? "مركز دبي لطب الأسنان" : "Dubai Dental Clinic"}
                 </h4>
                 <p className="mt-1 text-[11px] text-[#5B6B84] leading-relaxed">
                   {isAr
-                    ? "١١٦ شارع محيي الدين أبو العز، الطابق التاسع، الدقي"
-                    : "116 Mohy El-Din Abu El-Ezz St., 9th Floor, Dokki"}
+                    ? "٢٠ شارع عز الدين عمر، متفرع من شارع الهرم، الطالبية، الهرم"
+                    : "20 Ezz El-Din Omar St., Al-Haram, Talbiya, Giza"}
                 </p>
 
                 <a

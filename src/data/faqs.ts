@@ -4,35 +4,35 @@ export const faqsData: FaqItem[] = [
   {
     id: "faq-1",
     question: {
-      ar: "أين تقع عيادات يوتوبيا تحديداً في الدقي؟ وما هي أقرب العلامات المميزة؟",
-      en: "Where is Utopia Dental Clinics located in Dokki?",
+      ar: "أين يقع مركز دبي لطب الأسنان تحديداً في الهرم؟ وما هي أقرب العلامات المميزة؟",
+      en: "Where is Dubai Dental Clinic located in Al-Haram, Giza?",
     },
     answer: {
-      ar: "تقع العيادة في ١١٦ شارع محيي الدين أبو العز، الطابق التاسع، الدقي، الجيزة. الموقع مركزي وهادئ مع إطلالة بانورامية ومصاعد مريحة لخدمة المراجعين.",
-      en: "We are located at 116 Mohy El-Din Abu El-Ezz Street, 9th Floor, Dokki, Giza. Centrally situated with convenient access, modern elevators, and tranquil views.",
+      ar: "يقع المركز في ٢٠ شارع عز الدين عمر، متفرع من شارع الهرم الرئيسي (محطة العريش)، برج المروة، بجوار حلواني بشبش وخلف بنك مصر، الطالبية، الهرم، محافظة الجيزة.",
+      en: "We are located at 20 Ezz El-Din Omar Street, branching off main Al-Haram Street (El-Arish Station), Al-Marwa Tower, next to Beshbesh Pastry and behind Banque Misr, Talbiya, Al-Haram, Giza.",
     },
     category: "general",
   },
   {
     id: "faq-2",
     question: {
-      ar: "ما هي مواعيد العمل اليومية للعيادة؟",
+      ar: "ما هي مواعيد العمل اليومية في مركز دبي لطب الأسنان؟",
       en: "What are your daily clinic working hours?",
     },
     answer: {
-      ar: "نستقبل المراجعين يومياً من الساعة ٢:٠٠ ظهراً حتى ١٠:٠٠ مساءً، لتناسب مختلف الجداول اليومية بعد ساعات العمل والدراسة.",
-      en: "We welcome patients daily from 2:00 PM to 10:00 PM, accommodating convenient afternoon and evening schedules.",
+      ar: "نستقبل المراجعين يومياً من الساعة ١:٠٠ ظهراً حتى ١١:٠٠ مساءً، ويوم الجمعة بمواعيد وحجوزات مسبقة.",
+      en: "We welcome patients daily from 1:00 PM to 11:00 PM, and on Fridays by advance appointment.",
     },
     category: "general",
   },
   {
     id: "faq-3",
     question: {
-      ar: "كيف تتم بروتوكولات التعقيم والنظافة في عيادات يوتوبيا؟",
+      ar: "كيف تتم بروتوكولات التعقيم والنظافة في مركز دبي لطب الأسنان؟",
       en: "What infection control and sterilization standards do you follow?",
     },
     answer: {
-      ar: "نتبع بروتوكول تعقيم جراحي صارم من الفئة (Class B Autoclave) المعتمدة بالمستشفيات الدولية. تُحفظ الأدوات في أكياس محكمة الغلق لا تُفتح إلا أمام المراجع مباشرة، مع تعقيم وتطهير كامل لمقعد العلاج والأسطح بين كل مراجع وآخر.",
+      ar: "نتبع بروتوكول تعقيم جراحي صارم بأحدث أجهزة الأوتوكلاف (Class B Autoclave) المتوافقة مع المعايير الطبية العالمية. تُحفظ الأدوات في أكياس تعقيم معقمة حرارياً ومحكمة لا تُفتح إلا أمام المراجع مباشرة، مع تطهير شامل لمقاعد الكشف والمقابض والأسطح بعد كل زيارة.",
       en: "We adhere strictly to hospital-grade Class B autoclave sterilization cycles. Instruments are hermetically sealed and opened exclusively in front of the patient, with deep surface disinfection between visits.",
     },
     category: "safety",
@@ -44,56 +44,56 @@ export const faqsData: FaqItem[] = [
       en: "How are treatment costs determined and communicated?",
     },
     answer: {
-      ar: "نؤمن بالشفافية التامة؛ لا توجد أي تكاليف خفية أو مفاجئة. بعد الفحص السريري والأشعة، يشرح لك الطبيب خطة العلاج بالتفصيل والخيارات المتاحة مع بيان مالي دقيق لكل مرحلة قبل اتخاذ أي قرار.",
-      en: "We believe in total transparency with zero hidden surprises. Following your clinical exam and imaging, your doctor outlines the recommended roadmap with clear, itemized options before any procedure commences.",
+      ar: "نتميز بالأمانة الطبية والشفافية الكاملة بدون أي تكاليف خفية؛ بعد الكشف السريري وفحص الأشعة، يشرح د. كريم كمال أو الطبيب المختص التشخيص وخطة العلاج والخيارات المتاحة بالتكلفة الدقيقة قبل بدء أي خطوة.",
+      en: "We maintain complete medical transparency with zero hidden costs. Following clinical examination and imaging, our specialists outline your diagnosis and itemized treatment options before beginning any procedure.",
     },
     category: "booking",
   },
   {
     id: "faq-5",
     question: {
-      ar: "هل يمكنني حجز موعد عاجل أو طارئ في نفس اليوم؟",
-      en: "Can I request a same-day urgent appointment for acute pain?",
+      ar: "هل يمكنني حجز موعد عاجل أو طارئ لعلاج وجع الضرس أو العصب في نفس اليوم؟",
+      en: "Can I request a same-day urgent appointment for acute toothache?",
     },
     answer: {
-      ar: "نعم، نبذل أقصى جهدنا لاستيعاب حالات الألم الحاد وطوارئ الأسنان في نفس اليوم. يمكنك التواصل الفوري عبر الهاتف (01117655583) أو عبر واتساب للتنسيق العاجل.",
-      en: "Yes, we reserve dedicated slots for acute toothache and trauma. Please call us directly at 01117655583 or message us on WhatsApp for prompt prioritization.",
+      ar: "نعم، نخصص أوقاتاً مخصصة يومياً للتعامل السريع مع آلام العصب والأسنان الحادة والطوارئ. يمكنك الاتصال فوراً بالرقم (01022013314) أو إرسال رسالة واتساب على نفس الرقم للتنسيق الفوري.",
+      en: "Yes, we reserve dedicated slots for acute toothache and emergency relief. Please call us directly at 01022013314 or WhatsApp us on the same number for immediate prioritization.",
     },
     category: "booking",
   },
   {
     id: "faq-6",
     question: {
-      ar: "طفلي يخاف بشدة من طبيب الأسنان، كيف تتعاملون مع هذا القلق؟",
-      en: "My child has acute dental fear. How do your specialists handle anxiety?",
+      ar: "هل علاج وحشو العصب في مركز دبي مؤلم؟",
+      en: "Is root canal treatment painful at Dubai Dental Clinic?",
     },
     answer: {
-      ar: "أخصائي طب أسنان الأطفال د. عمر مخلوف مدرب خصيصاً على التوجيه السلوكي المريح وخلق بيئة مرحة دون إكراه، حيث نبدأ بجلسة تعارف وودية لكسر حاجز الخوف أولاً.",
-      en: "Our pediatric specialist, Dr. Omar Makhlouf, uses gentle behavioral techniques and warm child-centered communication to build confidence without pressure.",
+      ar: "إطلاقاً؛ نستخدم أحدث أنظمة التخدير الموضعي الفعال وأجهزة الروتاري الإلكترونية الدقيقة لتنظيف وحشو الجذور بسلاسة وسرعة فائقة وبدون أي ألم أثناء أو بعد الجلسة.",
+      en: "Not at all. We utilize modern painless local anesthesia techniques and digital rotary endodontic equipment for gentle, precise, and completely pain-free root canal therapy.",
     },
     category: "services",
   },
   {
     id: "faq-7",
     question: {
-      ar: "هل أحتاج إلى كشف مسبق قبل اختيار إجراء معين مثل الفينيرز أو الزراعة؟",
-      en: "Do I need a consultation before deciding on veneers or implants?",
+      ar: "هل أحتاج إلى كشف مسبق قبل إجراءات زراعة الأسنان أو الفينيرز؟",
+      en: "Do I need a consultation before deciding on dental implants or veneers?",
     },
     answer: {
-      ar: "نعم، الفحص السريري الدقيق هو الخطوة الأولى الضرورية لتقييم صحة اللثة والعظم وملاءمة الإجراء لحالتك لضمان استقرار ونجاح النتيجة على المدى البعيد.",
-      en: "Yes. Thorough clinical and radiological evaluation is essential to confirm gum health and bone support, ensuring predictable, lasting aesthetic and functional results.",
+      ar: "نعم، الفحص السريري الدقيق والأشعة ثلاثية الأبعاد هما الأساس لتقييم سمك العظم وصحة اللثة وتصميم الابتسامة الأنسب لملامح وجهك لضمان أعلى درجات النجاح والجمال الطبيعي.",
+      en: "Yes. Clinical evaluation and 3D imaging are essential to assess bone dimensions, gum health, and design a custom smile that complements your facial aesthetics.",
     },
     category: "services",
   },
   {
     id: "faq-8",
     question: {
-      ar: "هل يمكنني التواصل والمتابعة بعد انتهاء الجلسة العلاجية؟",
-      en: "Is direct post-treatment support available after my visit?",
+      ar: "هل يمكنني التواصل والمتابعة عبر الواتساب بعد انتهاء الجلسة العلاجية؟",
+      en: "Is direct post-treatment WhatsApp support available after my visit?",
     },
     answer: {
-      ar: "بالتأكيد؛ يقدم فريق العيادة إرشادات مكتوبة ومفصلة بعد كل إجراء، ويبقى خط واتساب المباشر متاحاً للإجابة عن أي استفسار أو متابعة التئام الحالة.",
-      en: "Absolutely. Written post-care instructions are provided after every procedure, and our direct WhatsApp concierge remains open for any follow-up questions.",
+      ar: "بالتأكيد؛ يقدم فريق المركز إرشادات مكتوبة ومفصلة بعد كل إجراء، ويبقى رقم واتساب العيادة المباشر (01022013314) متاحاً للإجابة عن أي استفسار ومتابعة التئام الحالة.",
+      en: "Absolutely. Written post-care guidelines are provided, and our direct WhatsApp concierge (01022013314) remains available for any questions or follow-up needs.",
     },
     category: "general",
   },

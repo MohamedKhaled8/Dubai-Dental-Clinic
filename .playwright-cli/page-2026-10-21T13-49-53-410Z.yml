@@ -1,0 +1,526 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - complementary "Loading" [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e5]:
+          - generic [ref=e6]: UTOPIA CLINICS
+          - generic [ref=e7]: UTOPIA CLINICS
+        - generic [ref=e8]: Dokki · Modern Specialist Care
+    - banner [ref=e9]:
+      - link "U Utopia Clinics Dokki, Giza · عيادات يوتوبيا" [ref=e10] [cursor=pointer]:
+        - /url: "#oris-hero"
+        - generic [ref=e11]: U
+        - generic [ref=e12]:
+          - paragraph [ref=e13]: Utopia Clinics
+          - generic [ref=e14]: Dokki, Giza · عيادات يوتوبيا
+      - generic [ref=e15]:
+        - link "0111 765 5583" [ref=e16] [cursor=pointer]:
+          - /url: tel:01117655583
+        - button "Book Appointment" [ref=e19] [cursor=pointer]
+    - main [ref=e22]:
+      - generic [ref=e24]:
+        - generic:
+          - generic [ref=e25]:
+            - generic [ref=e26]: Dokki, Giza · 116 Mohy El-Din Abu El-Ezz (9th Fl.)
+            - heading "Brighten your smile with calm, specialist dental care" [level=1] [ref=e31]
+            - paragraph [ref=e32]: Under the supervision of certified consultants, we provide gentle, personalized dental treatments with 3D CBCT digital planning.
+            - generic [ref=e33]:
+              - button "Book 3D Consultation" [ref=e34] [cursor=pointer]
+              - link "WhatsApp Direct" [ref=e38] [cursor=pointer]:
+                - /url: https://wa.me/201117655583
+          - generic [ref=e42]:
+            - paragraph [ref=e43]: "Our clinical treatments in Dokki are designed around complete pain prevention: from routine ultrasonic cleanings to computer-guided titanium implants and bespoke cosmetic restorations."
+            - generic [ref=e44]:
+              - generic [ref=e45]:
+                - generic [ref=e46]: 4.9 / 5.0 · 164+ Google Reviews
+                - heading "Join 5000+" [level=3] [ref=e50]
+                - paragraph [ref=e51]: Satisfied patients in Dokki & Giza
+              - generic [ref=e52]:
+                - generic [ref=e53]:
+                  - generic [ref=e54]:
+                    - generic [ref=e55] [cursor=pointer]: AK
+                    - generic:
+                      - generic: Dr. Ahmed Karam
+                      - generic: Clinic Director
+                  - generic [ref=e56]:
+                    - generic [ref=e57] [cursor=pointer]: AA
+                    - generic:
+                      - generic: Dr. Amr Adel
+                      - generic: Implants Specialist
+                  - generic [ref=e58]:
+                    - generic [ref=e59] [cursor=pointer]: SF
+                    - generic:
+                      - generic: Dr. Sherif Fathy
+                      - generic: Orthodontics
+                  - generic [ref=e60]:
+                    - generic [ref=e61] [cursor=pointer]: OM
+                    - generic:
+                      - generic: Dr. Omar Makhlouf
+                      - generic: Pediatric Care
+                  - generic [ref=e62]:
+                    - generic [ref=e63] [cursor=pointer]: NA
+                    - generic:
+                      - generic: Dr. Nouran Ahmed
+                      - generic: Aesthetic Veneers
+                - generic [ref=e64]: Supervised by 8+ Dental Specialists
+      - generic [ref=e65]:
+        - generic [ref=e66]:
+          - generic [ref=e67]:
+            - generic [ref=e68]:
+              - generic [ref=e69]: Who We Are · من نحن
+              - heading "Calm, Artful Dental Care in the Heart of Dokki" [level=2] [ref=e72]
+              - paragraph [ref=e73]: A specialist practice dedicated to gentle hands, advanced 3D technology, and patient peace of mind.
+            - generic [ref=e74]:
+              - paragraph [ref=e75]:
+                - text: At Utopia Dental Clinics, under the clinical leadership of
+                - strong [ref=e76]: Dr. Ahmed Karam
+                - text: and our multidisciplinary team of 8+ specialized consultants, we believe everyone deserves a healthy, confident smile without dental anxiety.
+              - paragraph [ref=e77]: Located on the 9th floor of 116 Mohy El-Din Abu El-Ezz, we integrate in-house 3D CBCT digital imaging, computer-guided implant surgery, hospital-grade sterilization, and personalized treatment schedules crafted around your comfort and budget.
+              - generic [ref=e78]:
+                - generic [ref=e79]: ✓ In-House 3D CBCT Scans
+                - generic [ref=e80]: ✓ 100% Sterile Hospital Protocols
+                - generic [ref=e81]: ✓ 8+ Certified Consultants
+          - generic [ref=e82]:
+            - generic [ref=e83]:
+              - generic [ref=e84]:
+                - generic [ref=e86]:
+                  - generic [ref=e87]: "0"
+                  - generic [ref=e88]: "1"
+                  - generic [ref=e89]: "2"
+                  - generic [ref=e90]: "3"
+                  - generic [ref=e91]: "4"
+                  - generic [ref=e92]: "5"
+                  - generic [ref=e93]: "6"
+                  - generic [ref=e94]: "7"
+                  - generic [ref=e95]: "8"
+                  - generic [ref=e96]: "9"
+                - generic [ref=e98]:
+                  - generic [ref=e99]: "0"
+                  - generic [ref=e100]: "1"
+                  - generic [ref=e101]: "2"
+                  - generic [ref=e102]: "3"
+                  - generic [ref=e103]: "4"
+                  - generic [ref=e104]: "5"
+                  - generic [ref=e105]: "6"
+                  - generic [ref=e106]: "7"
+                  - generic [ref=e107]: "8"
+                  - generic [ref=e108]: "9"
+                - generic [ref=e109]: +
+              - paragraph [ref=e110]: Years of Clinical Excellence
+            - generic [ref=e111]:
+              - generic [ref=e112]:
+                - generic [ref=e114]:
+                  - generic [ref=e115]: "0"
+                  - generic [ref=e116]: "1"
+                  - generic [ref=e117]: "2"
+                  - generic [ref=e118]: "3"
+                  - generic [ref=e119]: "4"
+                  - generic [ref=e120]: "5"
+                  - generic [ref=e121]: "6"
+                  - generic [ref=e122]: "7"
+                  - generic [ref=e123]: "8"
+                  - generic [ref=e124]: "9"
+                - generic [ref=e125]: +
+              - paragraph [ref=e126]: Board-Certified Dental Specialists
+            - generic [ref=e127]:
+              - generic [ref=e128]:
+                - generic [ref=e130]:
+                  - generic [ref=e131]: "0"
+                  - generic [ref=e132]: "1"
+                  - generic [ref=e133]: "2"
+                  - generic [ref=e134]: "3"
+                  - generic [ref=e135]: "4"
+                  - generic [ref=e136]: "5"
+                  - generic [ref=e137]: "6"
+                  - generic [ref=e138]: "7"
+                  - generic [ref=e139]: "8"
+                  - generic [ref=e140]: "9"
+                - generic [ref=e141]: .
+                - generic [ref=e143]:
+                  - generic [ref=e144]: "0"
+                  - generic [ref=e145]: "1"
+                  - generic [ref=e146]: "2"
+                  - generic [ref=e147]: "3"
+                  - generic [ref=e148]: "4"
+                  - generic [ref=e149]: "5"
+                  - generic [ref=e150]: "6"
+                  - generic [ref=e151]: "7"
+                  - generic [ref=e152]: "8"
+                  - generic [ref=e153]: "9"
+              - paragraph [ref=e154]: Google Star Rating (164+ Reviews)
+            - generic [ref=e155]:
+              - generic [ref=e156]:
+                - generic [ref=e158]:
+                  - generic [ref=e159]: "0"
+                  - generic [ref=e160]: "1"
+                  - generic [ref=e161]: "2"
+                  - generic [ref=e162]: "3"
+                  - generic [ref=e163]: "4"
+                  - generic [ref=e164]: "5"
+                  - generic [ref=e165]: "6"
+                  - generic [ref=e166]: "7"
+                  - generic [ref=e167]: "8"
+                  - generic [ref=e168]: "9"
+                - generic [ref=e170]:
+                  - generic [ref=e171]: "0"
+                  - generic [ref=e172]: "1"
+                  - generic [ref=e173]: "2"
+                  - generic [ref=e174]: "3"
+                  - generic [ref=e175]: "4"
+                  - generic [ref=e176]: "5"
+                  - generic [ref=e177]: "6"
+                  - generic [ref=e178]: "7"
+                  - generic [ref=e179]: "8"
+                  - generic [ref=e180]: "9"
+                - generic [ref=e181]: "%"
+              - paragraph [ref=e182]: Patient Satisfaction in Dokki
+        - generic [ref=e183]:
+          - generic [ref=e184]:
+            - generic [ref=e185]:
+              - generic [ref=e186]: Clinical Protocols & Standards · معايير الرعاية المتطورة
+              - heading "Care Designed for Your Lasting Comfort" [level=2] [ref=e189]
+            - generic [ref=e190]:
+              - button "Previous card" [ref=e191] [cursor=pointer]
+              - button "Next card" [ref=e194] [cursor=pointer]
+          - generic [ref=e198]:
+            - generic [ref=e201]:
+              - generic [ref=e202]:
+                - generic [ref=e203]: "01"
+                - generic [ref=e204]: 3D Diagnostics
+              - generic [ref=e205]:
+                - heading "Digital CBCT & Intraoral Scan" [level=3] [ref=e212]
+                - paragraph [ref=e213]: Comprehensive bone density evaluation and 3D computer-guided surgical planning without uncomfortable impression molds.
+              - generic [ref=e214]:
+                - generic [ref=e215]: Zero Discomfort · Precision Mapping
+                - button "Book consultation" [ref=e220] [cursor=pointer]
+            - generic [ref=e226]:
+              - generic [ref=e227]:
+                - generic [ref=e228]: "02"
+                - generic [ref=e229]: Restoration
+              - generic [ref=e230]:
+                - heading "Guided Titanium Dental Implants" [level=3] [ref=e235]
+                - paragraph [ref=e236]: Biocompatible titanium root fixtures placed under local anesthesia to support permanent, lifelike Zirconia crowns.
+              - generic [ref=e237]:
+                - generic [ref=e238]: Lifetime Osseointegration · Bone Care
+                - button "Book consultation" [ref=e243] [cursor=pointer]
+            - generic [ref=e249]:
+              - generic [ref=e250]:
+                - generic [ref=e251]: "03"
+                - generic [ref=e252]: Orthodontics
+              - generic [ref=e253]:
+                - heading "Clear Aligners & Aesthetic Braces" [level=3] [ref=e258]
+                - paragraph [ref=e259]: Custom transparent aligner trays tailored to correct crowding and spacing while keeping treatment discreet and removable.
+              - generic [ref=e260]:
+                - generic [ref=e261]: Invisible Trays · Perfect Bite Balance
+                - button "Book consultation" [ref=e266] [cursor=pointer]
+            - generic [ref=e272]:
+              - generic [ref=e273]:
+                - generic [ref=e274]: "04"
+                - generic [ref=e275]: Hygiene
+              - generic [ref=e276]:
+                - heading "Ultrasonic Scaling & Periodontics" [level=3] [ref=e280]
+                - paragraph [ref=e281]: Micro-vibration tartar removal beneath the gumline followed by gentle polishing to protect against bleeding and sensitivity.
+              - generic [ref=e282]:
+                - generic [ref=e283]: Deep Gum Health · Enamel Polishing
+                - button "Book consultation" [ref=e288] [cursor=pointer]
+            - generic [ref=e294]:
+              - generic [ref=e295]:
+                - generic [ref=e296]: "05"
+                - generic [ref=e297]: Pediatric Care
+              - generic [ref=e298]:
+                - heading "Gentle Child-Friendly Dentistry" [level=3] [ref=e303]
+                - paragraph [ref=e304]: A warm, psychologically reassuring environment that eliminates dental anxiety and establishes positive lifelong oral hygiene.
+              - generic [ref=e305]:
+                - generic [ref=e306]: Fear-Free Visits · Fluoride Protection
+                - button "Book consultation" [ref=e311] [cursor=pointer]
+            - generic [ref=e317]:
+              - generic [ref=e318]:
+                - generic [ref=e319]: "06"
+                - generic [ref=e320]: Aesthetics
+              - generic [ref=e321]:
+                - heading "Bespoke Veneers & Zirconia Crowns" [level=3] [ref=e326]
+                - paragraph [ref=e327]: Individually calibrated porcelain restorations matched to facial symmetry and natural tooth translucency for radiant confidence.
+              - generic [ref=e328]:
+                - generic [ref=e329]: Handcrafted E-max · Natural Translucency
+                - button "Book consultation" [ref=e334] [cursor=pointer]
+        - generic [ref=e338]:
+          - generic [ref=e339]:
+            - generic [ref=e340]: Specialized Clinical Procedures · إجراءات تخصصية
+            - heading "Specialist Dental Treatments" [level=2] [ref=e343]
+            - paragraph [ref=e344]: Personalized clinical care performed by certified consultants at Utopia Clinics Dokki.
+          - generic [ref=e346]:
+            - generic [ref=e347]:
+              - generic [ref=e348]:
+                - generic [ref=e349]:
+                  - generic [ref=e350]: Supervised by Dr. Amr Adel & Dr. Ahmed Hany
+                  - heading "Guided Titanium Dental Implants" [level=3] [ref=e351]
+                  - generic [ref=e352]:
+                    - generic [ref=e353]: 3D CBCT Guided
+                    - generic [ref=e358]: Biocompatible Titanium
+                    - generic [ref=e363]: Permanent Solution
+                - generic [ref=e368]:
+                  - paragraph [ref=e369]: Titanium posts surgically anchored into the jawbone using 3D guided surgical templates to replace missing teeth with natural-feeling, long-lasting Zirconia crowns. Preserves jawbone structure and bite strength.
+                  - button "Book Consultation for this Treatment" [ref=e371] [cursor=pointer]
+              - img "Guided Titanium Dental Implants" [ref=e376]
+            - generic [ref=e377]:
+              - generic [ref=e378]:
+                - generic [ref=e379]:
+                  - generic [ref=e380]: Supervised by Dr. Sherif Fathy
+                  - heading "Clear Aligners & Aesthetic Orthodontics" [level=3] [ref=e381]
+                  - generic [ref=e382]:
+                    - generic [ref=e383]: Invisible Trays
+                    - generic [ref=e388]: Custom Digital Fit
+                    - generic [ref=e393]: Predictable Milestones
+                - generic [ref=e398]:
+                  - paragraph [ref=e399]: Discreet clear aligners and modern ceramic braces that gently move teeth into proper harmony, correcting crowding and bite alignment without affecting your everyday lifestyle or speech.
+                  - button "Book Consultation for this Treatment" [ref=e401] [cursor=pointer]
+              - img "Clear Aligners & Aesthetic Orthodontics" [ref=e406]
+            - generic [ref=e407]:
+              - generic [ref=e408]:
+                - generic [ref=e409]:
+                  - generic [ref=e410]: Supervised by Dr. Nouran Ahmed
+                  - heading "Bespoke Veneers & Smile Architecture" [level=3] [ref=e411]
+                  - generic [ref=e412]:
+                    - generic [ref=e413]: Natural Translucency
+                    - generic [ref=e418]: E-max Porcelain
+                    - generic [ref=e423]: Minimal Enamel Prep
+                - generic [ref=e428]:
+                  - paragraph [ref=e429]: Handcrafted ultra-thin porcelain veneers calibrated to your unique facial symmetry and lip line. Delivers lifelike luminosity, closes gaps, and permanently corrects discoloration.
+                  - button "Book Consultation for this Treatment" [ref=e431] [cursor=pointer]
+              - img "Bespoke Veneers & Smile Architecture" [ref=e436]
+        - generic [ref=e437]:
+          - img "Utopia Dental clinic Dokki interior" [ref=e439]
+          - generic [ref=e441]:
+            - generic [ref=e442]: Dokki Specialist Care · 9th Floor
+            - heading "Gentle, personalized care designed to preserve your natural smile for decades to come." [level=2] [ref=e443]
+        - generic [ref=e445]:
+          - generic [ref=e446]:
+            - generic [ref=e447]:
+              - generic [ref=e448]: Verified Clinical Excellence · تقييمات موثقة
+              - heading "Trusted by Patients Across Dokki & Greater Cairo" [level=2] [ref=e453]:
+                - text: Trusted by Patients Across
+                - generic [ref=e454]: Dokki & Greater Cairo
+              - paragraph [ref=e455]: Real clinical experiences from patients who chose Utopia Dental Clinics for gentle implants, pediatric care, and restorative dentistry.
+            - generic [ref=e456]:
+              - generic [ref=e457]: "4.9"
+              - generic [ref=e470]:
+                - generic [ref=e471]: Verified Google Reviews
+                - paragraph [ref=e476]: Over 164 Happy Smiles
+                - paragraph [ref=e477]: Dokki Clinic · 9th Floor, 116 Mohy El-Din
+          - generic [ref=e478]:
+            - generic [ref=e479]:
+              - paragraph [ref=e496]: "\"An exemplary clinic in Mohy El-Din Abu El-Ezz, Dokki. The specialist mapped out the implant steps clearly with total comfort and zero pain. 100% sterile and punctual.\""
+              - generic [ref=e497]:
+                - generic [ref=e498]:
+                  - generic [ref=e499]: AO
+                  - generic [ref=e500]:
+                    - heading "Eng. Ahmed Othman" [level=4] [ref=e501]
+                    - paragraph [ref=e502]: Dental Implants
+                - generic [ref=e503]: 2 weeks ago
+            - generic [ref=e504]:
+              - paragraph [ref=e521]: "\"The shade and symmetry of the front veneers look remarkably natural. Highly courteous team and absolute respect for appointment timings. Strongly recommended in Dokki.\""
+              - generic [ref=e522]:
+                - generic [ref=e523]:
+                  - generic [ref=e524]: HA
+                  - generic [ref=e525]:
+                    - heading "Dr. Heba Abdelmonem" [level=4] [ref=e526]
+                    - paragraph [ref=e527]: Veneers & Smile Design
+                - generic [ref=e528]: 1 month ago
+            - generic [ref=e529]:
+              - paragraph [ref=e546]: "\"My son's first dental visit with zero fear or tears. The pediatric specialist's gentle, reassuring demeanor turned a nerve-wracking visit into a truly positive milestone.\""
+              - generic [ref=e547]:
+                - generic [ref=e548]:
+                  - generic [ref=e549]: TA
+                  - generic [ref=e550]:
+                    - heading "Tarek Abdelwahab" [level=4] [ref=e551]
+                    - paragraph [ref=e552]: Pediatric Dentistry
+                - generic [ref=e553]: 2 months ago
+            - generic [ref=e554]:
+              - paragraph [ref=e571]: "\"The dental scaling was remarkably thorough and comfortable. The reception and nursing team are very professional, with a serene 9th-floor clinic ambiance.\""
+              - generic [ref=e572]:
+                - generic [ref=e573]:
+                  - generic [ref=e574]: SE
+                  - generic [ref=e575]:
+                    - heading "Sarah El-Gohary" [level=4] [ref=e576]
+                    - paragraph [ref=e577]: Scaling & Polishing
+                - generic [ref=e578]: 2 months ago
+            - generic [ref=e579]:
+              - paragraph [ref=e596]: "\"Arrived with severe toothache; the root canal was completed smoothly in two visits with a Zirconia crown matching my adjacent molars. Attentive post-care follow-up.\""
+              - generic [ref=e597]:
+                - generic [ref=e598]:
+                  - generic [ref=e599]: KR
+                  - generic [ref=e600]:
+                    - heading "Karim Radwan" [level=4] [ref=e601]
+                    - paragraph [ref=e602]: Root Canal & Zirconia Crown
+                - generic [ref=e603]: 3 months ago
+            - generic [ref=e604]:
+              - paragraph [ref=e621]: "\"Under orthodontic care for 8 months now; the crowding correction has been noticeable and reassuring. Punctual scheduling and clear monthly progress updates.\""
+              - generic [ref=e622]:
+                - generic [ref=e623]:
+                  - generic [ref=e624]: ME
+                  - generic [ref=e625]:
+                    - heading "Mayada El-Shafei" [level=4] [ref=e626]
+                    - paragraph [ref=e627]: Orthodontics
+                - generic [ref=e628]: 4 months ago
+        - generic [ref=e630]:
+          - generic [ref=e631]:
+            - generic [ref=e632]: Utopia Clinical Standards · المعايير السريرية
+            - heading "Where Passion Meets Purpose" [level=2] [ref=e634]
+            - paragraph [ref=e635]: Behind every healthy smile is a specialized medical team in Dokki, advanced sterilization protocols, and a commitment to genuine patient comfort.
+          - generic [ref=e636]:
+            - generic [ref=e637] [cursor=pointer]:
+              - img "Comprehensive Dental Diagnostics" [ref=e638]
+              - generic:
+                - generic:
+                  - generic: 8+ Board-Certified Specialists
+                  - heading "Multidisciplinary Consultation" [level=3]
+            - generic [ref=e640] [cursor=pointer]:
+              - img "3D Digital Treatment Planning" [ref=e641]
+              - generic:
+                - generic:
+                  - generic: Computer-Calibrated Precision
+                  - heading "Digital CBCT & Guided Surgery" [level=3]
+            - generic [ref=e643] [cursor=pointer]:
+              - img "Pediatric and Family Dentistry" [ref=e644]
+              - generic:
+                - generic:
+                  - generic: Calm Visits for Adults & Children
+                  - heading "Fear-Free Gentle Techniques" [level=3]
+            - generic [ref=e646] [cursor=pointer]:
+              - img "Sterilization and Patient Safety" [ref=e647]
+              - generic:
+                - generic:
+                  - generic: Highest Biosafety Standards
+                  - heading "Hospital-Grade Sterilization" [level=3]
+        - generic [ref=e650]:
+          - img "Utopia Dental clinic background"
+          - generic [ref=e652]:
+            - generic [ref=e653]: Direct Clinic Consultation · حجز مباشر
+            - heading "The first step to the smile you deserve" [level=2] [ref=e655]
+            - paragraph [ref=e656]: Leave a request or chat with our care coordinator directly. We are located on the 9th floor of 116 Mohy El-Din Abu El-Ezz St., Dokki.
+            - generic [ref=e657]:
+              - link [ref=e658] [cursor=pointer]:
+                - /url: https://wa.me/201117655583
+                - generic [ref=e662]:
+                  - paragraph [ref=e663]: Instant WhatsApp Chat
+                  - paragraph [ref=e664]: Reply in under 5 minutes
+              - link [ref=e665] [cursor=pointer]:
+                - /url: tel:+201117655583
+                - generic [ref=e669]:
+                  - paragraph [ref=e670]: "Call Reception: 0111 765 5583"
+                  - paragraph [ref=e671]: Daily from 2:00 PM – 10:00 PM
+              - generic [ref=e672]: 116 Mohy El-Din Abu El-Ezz, 9th Floor, Dokki
+          - generic [ref=e677]:
+            - generic [ref=e679]:
+              - heading "Request a Callback" [level=3] [ref=e680]
+              - paragraph [ref=e681]: Fill in your details and our doctor team will follow up.
+            - generic [ref=e685]:
+              - generic [ref=e686]:
+                - generic [ref=e687]: Full Name *
+                - textbox "Your full name" [ref=e688]
+              - generic [ref=e689]:
+                - generic [ref=e690]: Phone Number (WhatsApp) *
+                - generic [ref=e691]:
+                  - button "🇪🇬 +20" [ref=e692]:
+                    - generic [ref=e693]: 🇪🇬
+                    - generic [ref=e694]: "+20"
+                  - textbox "0111 765 5583" [ref=e695]
+              - generic [ref=e696]:
+                - generic [ref=e697]: Treatment Required *
+                - combobox [ref=e698]:
+                  - option "Dental Implants (زراعة الأسنان)" [selected]
+                  - option "Clear Aligners & Ortho (تقويم الأسنان)"
+                  - option "Veneers & Smile Design (ابتسامة هوليوود)"
+                  - option "Teeth Whitening (تبييض الأسنان بالليزر)"
+                  - option "Ultrasonic Scaling (تنظيف وتلميع الجير)"
+                  - option "Pediatric Dentistry (طب أسنان الأطفال)"
+                  - option "Root Canal Treatment (علاج الجذور والعصب)"
+              - generic [ref=e699]:
+                - generic [ref=e700]: Additional Notes (Optional)
+                - textbox "Any specific symptoms, questions, or preferred day..." [ref=e701]
+              - generic [ref=e702]:
+                - checkbox "I agree to be contacted via WhatsApp/Phone for consultation scheduling." [checked] [ref=e703]
+                - generic [ref=e704] [cursor=pointer]: I agree to be contacted via WhatsApp/Phone for consultation scheduling.
+              - button "Submit Consultation Request" [ref=e705] [cursor=pointer]
+        - generic [ref=e707]:
+          - generic [ref=e708]:
+            - generic [ref=e709]:
+              - generic [ref=e710]: Utopia Dental Clinics · Dokki
+              - heading "Brighten your smile with calm, specialist care." [level=2] [ref=e711]
+            - button "Book Consultation Now" [ref=e712] [cursor=pointer]
+          - navigation "Footer" [ref=e713]:
+            - generic [ref=e714]:
+              - paragraph [ref=e715]: Specialized Treatments
+              - list [ref=e716]:
+                - listitem [ref=e717]:
+                  - link "Dental Implants (زراعة)" [ref=e718] [cursor=pointer]:
+                    - /url: "#dental-treatments"
+                - listitem [ref=e720]:
+                  - link "Clear Aligners (تقويم)" [ref=e721] [cursor=pointer]:
+                    - /url: "#dental-treatments"
+                - listitem [ref=e723]:
+                  - link "Veneers & Aesthetics (تجميل)" [ref=e724] [cursor=pointer]:
+                    - /url: "#dental-treatments"
+                - listitem [ref=e726]:
+                  - link "Ultrasonic Scaling (تنظيف)" [ref=e727] [cursor=pointer]:
+                    - /url: "#dental-treatments"
+                - listitem [ref=e729]:
+                  - link "Pediatric Dentistry (أطفال)" [ref=e730] [cursor=pointer]:
+                    - /url: "#dental-treatments"
+            - generic [ref=e732]:
+              - paragraph [ref=e733]: Clinic Information
+              - list [ref=e734]:
+                - listitem [ref=e735]:
+                  - link "Dokki Medical Team" [ref=e736] [cursor=pointer]:
+                    - /url: "#passion-meet-purpose"
+                - listitem [ref=e738]:
+                  - link "3D CBCT Technology" [ref=e739] [cursor=pointer]:
+                    - /url: "#about-oris"
+                - listitem [ref=e741]:
+                  - link "Verified Reviews (4.9 ★)" [ref=e742] [cursor=pointer]:
+                    - /url: "#reviews"
+                - listitem [ref=e744]:
+                  - link "Hospital Sterilization" [ref=e745] [cursor=pointer]:
+                    - /url: "#passion-meet-purpose"
+            - generic [ref=e747]:
+              - paragraph [ref=e748]: Quick Contact
+              - list [ref=e749]:
+                - listitem [ref=e750]:
+                  - 'link "Call: 0111 765 5583" [ref=e751] [cursor=pointer]':
+                    - /url: tel:+201117655583
+                - listitem [ref=e753]:
+                  - link "WhatsApp Direct" [ref=e754] [cursor=pointer]:
+                    - /url: https://wa.me/201117655583
+                - listitem [ref=e756]:
+                  - link "Google Maps Location" [ref=e757] [cursor=pointer]:
+                    - /url: https://maps.app.goo.gl/xLv9aDGJTvHRCSya7
+                - listitem [ref=e759]:
+                  - 'link "Email: utopiadental2023@gmail.com" [ref=e760] [cursor=pointer]':
+                    - /url: mailto:utopiadental2023@gmail.com
+            - generic [ref=e762]:
+              - paragraph [ref=e763]: Hours & Location
+              - list [ref=e764]:
+                - listitem [ref=e765]:
+                  - link "116 Mohy El-Din Abu El-Ezz, 9th Fl." [ref=e766] [cursor=pointer]:
+                    - /url: https://maps.app.goo.gl/xLv9aDGJTvHRCSya7
+                - listitem [ref=e768]:
+                  - link "Dokki, Giza, Egypt" [ref=e769] [cursor=pointer]:
+                    - /url: https://maps.app.goo.gl/xLv9aDGJTvHRCSya7
+                - listitem [ref=e771]:
+                  - 'link "Daily: 2:00 PM – 10:00 PM" [ref=e772] [cursor=pointer]':
+                    - /url: "#oris-form"
+                - listitem [ref=e774]:
+                  - 'link "Friday: By Appointment" [ref=e775] [cursor=pointer]':
+                    - /url: "#oris-form"
+          - generic [ref=e777]:
+            - paragraph [ref=e778]: © 2026 Utopia Dental Clinics (عيادات يوتوبيا بالدقي). All Rights Reserved.
+            - paragraph [ref=e779]: Specialist Dentistry · Implants · Orthodontics · Veneers
+          - generic: UTOPIA
+  - complementary "مبدل تصاميم الموقع" [ref=e780]:
+    - generic [ref=e782]:
+      - button "معاينة التصاميم" [ref=e783]
+      - generic [ref=e791]:
+        - link "التصميم الأول (V1)" [ref=e792] [cursor=pointer]:
+          - /url: /
+        - link "مركز دبي الجديد (V2) ✨" [ref=e800] [cursor=pointer]:
+          - /url: /v2

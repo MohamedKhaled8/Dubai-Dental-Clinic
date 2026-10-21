@@ -16,8 +16,8 @@ export const servicesData: Service[] = [
         en: "Dental implants represent the modern standard for replacing missing teeth. A biocompatible titanium post is placed into the jawbone, where it naturally integrates over time to anchor a custom crown that matches your natural smile.",
       },
       {
-        ar: "نبدأ في عيادات يوتوبيا بالدقي بفحص سريري شامل مدعوم بالأشعة المقطعية ثلاثية الأبعاد (CBCT) لتقييم كثافة العظم وموقع الأعصاب والجيوب الأنفية، مما يتيح للأخصائي وضع خطة موجهة ودقيقة تلائم حالتك تماماً.",
-        en: "At Utopia Clinics Dokki, we begin with comprehensive clinical examination and 3D CBCT imaging to evaluate bone volume and anatomical boundaries, allowing our specialists to plan a precise, guided treatment tailored to you.",
+        ar: "نبدأ في مركز دبي لطب الأسنان بالهرم بفحص سريري شامل مدعوم بالأشعة المقطعية ثلاثية الأبعاد (CBCT) لتقييم كثافة العظم وموقع الأعصاب والجيوب الأنفية، مما يتيح للأخصائي وضع خطة موجهة ودقيقة تلائم حالتك تماماً.",
+        en: "At Dubai Dental Clinic Al-Haram, we begin with comprehensive clinical examination and 3D CBCT imaging to evaluate bone volume and anatomical boundaries, allowing our specialists to plan a precise, guided treatment tailored to you.",
       },
       {
         ar: "تساعد الزراعة في الحفاظ على عظام الفك من التآكل التدريجي بعد الخلع، وتحمي الأسنان المجاورة من الميل أو التحرك، وتعيد القدرة الطبيعية على مضغ الطعام والتحدث بثقة.",
@@ -187,8 +187,8 @@ export const servicesData: Service[] = [
     iconName: "Baby",
     overview: [
       {
-        ar: "طب أسنان الأطفال في عيادات يوتوبيا مصمم بالكامل حول نفسية الطفل. ندرك أن التجربة الأولى قد تشكل نظرة الطفل لطبيب الأسنان طوال حياته، ولذلك نعتمد أسلوباً هادئاً وودوداً يشجع الطفل ويزيل أي خوف أو توتر.",
-        en: "Pediatric dental care at Utopia is crafted around a child's comfort and emotional well-being. We understand that early visits shape lifelong attitudes toward oral health, which is why our approach is patient, gentle, and warm.",
+        ar: "طب أسنان الأطفال في مركز دبي لطب الأسنان مصمم بالكامل حول نفسية الطفل. ندرك أن التجربة الأولى قد تشكل نظرة الطفل لطبيب الأسنان طوال حياته، ولذلك نعتمد أسلوباً هادئاً وودوداً يشجع الطفل ويزيل أي خوف أو توتر.",
+        en: "Pediatric dental care at Dubai Dental Clinic is crafted around a child's comfort and emotional well-being. We understand that early visits shape lifelong attitudes toward oral health, which is why our approach is patient, gentle, and warm.",
       },
       {
         ar: "يقدم أخصائي أسنان الأطفال د. عمر مخلوف فحصاً شاملاً للأسنان اللبنية ومتابعة بزوغ الأسنان الدائمة، وجلسات الفلورايد المقوي للمينا، وسد الشقوق المانع للتسوس (Fissure Sealants)، بالإضافة لعلاج التسوس بلطف وتوجيه الوالدين.",
@@ -362,8 +362,8 @@ export const servicesData: Service[] = [
         en: "Dental veneers are micro-thin, custom-crafted ceramic facings made of high-translucency materials such as E-max. They bond securely to the front surface of teeth to correct deep discoloration, minor chips, and asymmetry.",
       },
       {
-        ar: "نعتمد في يوتوبيا على مفهوم التحضير الدقيق المحافظ (Minimal-Prep) للحفاظ على أكبر قدر ممكن من مينا السن الطبيعية، مع محاكاة بصرية رقمية لشكل الابتسامة قبل اتخاذ أي قرار نهائي.",
-        en: "At Utopia, we focus on conservative, minimal-preparation techniques to preserve natural enamel integrity, paired with aesthetic pre-visualization before final bonding.",
+        ar: "نعتمد في مركز دبي لطب الأسنان على مفهوم التحضير الدقيق المحافظ (Minimal-Prep) للحفاظ على أكبر قدر ممكن من مينا السن الطبيعية، مع محاكاة بصرية رقمية لشكل الابتسامة قبل اتخاذ أي قرار نهائي.",
+        en: "At Dubai Dental Clinic, we focus on conservative, minimal-preparation techniques to preserve natural enamel integrity, paired with aesthetic pre-visualization before final bonding.",
       },
     ],
     whoItIsFor: [
@@ -526,8 +526,8 @@ export const servicesData: Service[] = [
         en: "Gums provide the living foundation for every tooth. Early inflammation (gingivitis) causes bleeding during brushing; if left unattended, it can progress to periodontitis with deeper pockets and bone resorption.",
       },
       {
-        ar: "نقدم في عيادات يوتوبيا بروتوكولات علاجية تبدأ بالتقليح العميق وكشط الجذور (Root Planing) لتنعيم أسطح الجذور وإزالة المستعمرات البكتيرية، مع متابعات دورية منتظمة لاستعادة ثبات ونضارة اللثة.",
-        en: "We offer tailored periodontal therapies ranging from deep subgingival scaling and root planing to smooth root surfaces, alongside structured recall visits to stabilize the periodontal foundation.",
+        ar: "نقدم في مركز دبي لطب الأسنان بروتوكولات علاجية تبدأ بالتقليح العميق وكشط الجذور (Root Planing) لتنعيم أسطح الجذور وإزالة المستعمرات البكتيرية، مع متابعات دورية منتظمة لاستعادة ثبات ونضارة اللثة.",
+        en: "At Dubai Dental Clinic, we offer tailored periodontal therapies ranging from deep subgingival scaling and root planing to smooth root surfaces, alongside structured recall visits to stabilize the periodontal foundation.",
       },
     ],
     whoItIsFor: [
@@ -597,8 +597,8 @@ export const servicesData: Service[] = [
     iconName: "Crown",
     overview: [
       {
-        ar: "التركيبات الثابتة هي الحل الأمثل لترميم الأسنان التي تعرضت لتلف كبير أو بعد علاج الجذور، أو لتعويض سن مفقود عن طريق الجسور الثابتة. نستخدم في عيادات يوتوبيا أفضل خامات السيراميك الألمانية المعتمدة دولياً، وعلى رأسها الزيركونيا فائق الصلابة وخزف الإيماكس عالي الشفافية.",
-        en: "Fixed dental restorations rebuild extensively damaged teeth or replace missing teeth via dental bridges. At Utopia Clinics Dokki, we utilize internationally certified materials including high-strength Zirconia and lifelike E-max ceramics.",
+        ar: "التركيبات الثابتة هي الحل الأمثل لترميم الأسنان التي تعرضت لتلف كبير أو بعد علاج الجذور، أو لتعويض سن مفقود عن طريق الجسور الثابتة. نستخدم في مركز دبي لطب الأسنان أفضل خامات السيراميك الألمانية المعتمدة دولياً، وعلى رأسها الزيركونيا فائق الصلابة وخزف الإيماكس عالي الشفافية.",
+        en: "Fixed dental restorations rebuild extensively damaged teeth or replace missing teeth via dental bridges. At Dubai Dental Clinic, we utilize internationally certified materials including high-strength Zirconia and lifelike E-max ceramics.",
       },
       {
         ar: "تُصنع التركيبات عبر تقنية التصميم والتصنيع المحوسب (CAD/CAM) لضمان انطباق حواف التاج بدقة متناهية تحمي السن من التسرب البكتيري وتطابق العضة الطبيعية دون أي انزعاج.",
@@ -793,10 +793,10 @@ export const servicesData: Service[] = [
         },
       },
       {
-        q: { ar: "هل توفر عيادات يوتوبيا هذه الخدمة دائماً؟ [يحتاج تأكيد]", en: "Is this service continuously available at Utopia? [CONFIRM]" },
+        q: { ar: "هل يوفر مركز دبي لطب الأسنان هذه الخدمة دائماً؟", en: "Is this service continuously available at Dubai Dental Clinic?" },
         a: {
-          ar: "توفر هذه الخدمة والترتيبات مع المستشفيات المعتمدة يحتاج إلى تأكيد مسبق وتنسيق مباشر مع إدارة العيادة بالدقي.",
-          en: "Scheduling and hospital coordination for general anesthesia require prior case-by-case confirmation with clinic administration.",
+          ar: "توفر هذه الخدمة والترتيبات مع المستشفيات المعتمدة يحتاج إلى تأكيد مسبق وتنسيق مباشر مع إدارة المركز بالهرم.",
+          en: "Scheduling and hospital coordination for general anesthesia require prior case-by-case confirmation with clinic administration in Al-Haram.",
         },
       },
       {

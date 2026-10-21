@@ -11,12 +11,12 @@ export const Route = createFileRoute("/blog/$slug")({
   head: () => ({
     meta: [
       {
-        title: "المقال التثقيفي السريري | مدونة عيادات يوتوبيا لطب الأسنان بالدقي",
+        title: "المقال التثقيفي السريري | مدونة مركز دبي لطب الأسنان بالهرم",
       },
       {
         name: "description",
         content:
-          "مقالات توعوية ومعلومات طبية معتمدة من استشاريي عيادات يوتوبيا لطب وتجميل الأسنان بالدقي.",
+          "مقالات توعوية ومعلومات طبية معتمدة من استشاريي مركز دبي لطب وتجميل وجراحة الأسنان بالهرم.",
       },
     ],
   }),
@@ -96,10 +96,10 @@ function ArticlePage() {
               <div>
                 <p className="font-serif font-bold text-xs sm:text-sm text-[#0E1F1C]">
                   {isAr
-                    ? "إشراف الفريق الطبي — عيادات يوتوبيا بالدقي"
-                    : "Supervised by Utopia Clinical Team — Dokki"}
+                    ? "إشراف الفريق الطبي — مركز دبي لطب الأسنان"
+                    : "Supervised by Dubai Dental Clinical Team — Al-Haram"}
                 </p>
-                <p className="text-[11px] text-[#16372F]/65 mt-0.5">١١٦ شارع محيي الدين أبو العز، الطابق التاسع</p>
+                <p className="text-[11px] text-[#16372F]/65 mt-0.5">٢٠ شارع عز الدين عمر، الطالبية، الهرم</p>
               </div>
             </div>
 
@@ -127,8 +127,8 @@ function ArticlePage() {
                 {isAr ? "ملاحظة توعوية: " : "Educational Disclaimer: "}
               </span>
               {isAr
-                ? "المعلومات الواردة في هذا المقال إرشادية وتثقيفية، ولا تعد بديلاً عن الفحص السريري المباشر وتشخيص الطبيب المختص داخل عيادات يوتوبيا بالدقي."
-                : "Information in this article is for patient education and does not replace in-person diagnostic evaluation at Utopia Dental Clinics Dokki."}
+                ? "المعلومات الواردة في هذا المقال إرشادية وتثقيفية، ولا تعد بديلاً عن الفحص السريري المباشر وتشخيص الطبيب المختص داخل مركز دبي لطب الأسنان بالهرم."
+                : "Information in this article is for patient education and does not replace in-person diagnostic evaluation at Dubai Dental Clinic Al-Haram."}
             </p>
           </div>
 

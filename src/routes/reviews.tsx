@@ -19,12 +19,12 @@ export const Route = createFileRoute("/reviews")({
   head: () => ({
     meta: [
       {
-        title: "آراء وتقييمات مراجعي عيادات يوتوبيا بالدقي | Patient Reviews",
+        title: "آراء وتقييمات مراجعي عيادة دبي لطب الأسنان | Patient Reviews",
       },
       {
         name: "description",
         content:
-          "اطلع على محاور تجارب مراجعي عيادات يوتوبيا لطب وتجميل وزراعة الأسنان في الدقي: الاحترام، التعقيم، الشرح الشفاف، واللطف مع الأطفال.",
+          "اطلع على تجارب مراجعي عيادة دبي لطب وتجميل وزراعة الأسنان: رعاية فائقة، تعقيم معتمد، وشرح شفاف لخطة العلاج.",
       },
     ],
   }),
@@ -77,12 +77,12 @@ function ReviewsPage() {
   ];
 
   const ratingValue = clinic?.googleRating.score ?? 4.9;
-  const reviewCount = clinic?.googleRating.reviewCount ?? 164;
+  const reviewCount = clinic?.googleRating.reviewCount ?? 1200;
   const lastUpdated =
     typeof clinic?.googleRating.lastUpdated === "object"
       ? clinic?.googleRating.lastUpdated[lang]
       : "October 2026";
-  const mapsUrl = clinic?.googleMapsUrl ?? clinic?.mapsUrl ?? "https://maps.app.goo.gl/xLv9aDGJTvHRCSya7";
+  const mapsUrl = clinic?.googleMapsUrl ?? clinic?.mapsUrl ?? "https://maps.app.goo.gl/uvr71SPw8w17bNsC6";
 
   return (
     <div className="min-h-screen bg-[#FBF9F4] text-[#0E1F1C]">
@@ -90,8 +90,8 @@ function ReviewsPage() {
         title={isAr ? "آراء وانطباعات مراجعينا" : "Patient Trust & Reviews"}
         sub={
           isAr
-            ? "نعتز بثقة كل مراجع اختار عيادات يوتوبيا بالدقي لابتسامته وابتسامة عائلته."
-            : "Reflections from individuals and families who trusted Utopia Dental Clinics in Dokki with their oral health."
+            ? "نعتز بثقة كل مراجع اختار مركز دبي لطب الأسنان بالهرم لابتسامته وابتسامة عائلته."
+            : "Reflections from individuals and families who trusted Dubai Dental Clinic in Al-Haram with their oral health."
         }
         crumb={isAr ? "التقييمات" : "Reviews"}
       />
@@ -146,7 +146,7 @@ function ReviewsPage() {
         <div className="mb-10 text-center max-w-2xl mx-auto">
           <span className="eyebrow mx-auto justify-center">
             <HeartHandshake className="w-3.5 h-3.5 text-[#C2A06A]" />
-            <span>{isAr ? "محاور التجربة في يوتوبيا" : "Common Experience Themes"}</span>
+            <span>{isAr ? "محاور التجربة في مركز دبي لطب الأسنان" : "Common Experience Themes"}</span>
           </span>
           <h2 className="mt-2 font-display text-3xl font-bold text-[#0E1F1C]">
             {isAr ? "قيم يلمسها المرضى في كل زيارة" : "What Patients Appreciate Most"}
@@ -222,7 +222,9 @@ function ReviewsPage() {
                   <h4 className="font-bold text-[#0E1F1C]">{r.author[lang]}</h4>
                   <p className="text-[11px] text-[#C2A06A] font-medium">{r.treatment[lang]}</p>
                 </div>
-                <span className="text-[11px] text-[#16372F]/40">{r.date}</span>
+                <span className="text-[11px] text-[#16372F]/40">
+                  {typeof r.date === "object" ? r.date[lang] : r.date}
+                </span>
               </div>
             </article>
           ))}

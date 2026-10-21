@@ -14,6 +14,7 @@ import { Route as AboutRouteImport } from './routes/about'
 import { Route as AdminRouteImport } from './routes/admin'
 import { Route as BookRouteImport } from './routes/book'
 import { Route as ContactRouteImport } from './routes/contact'
+import { Route as DentiaRouteImport } from './routes/dentia'
 import { Route as DoctorsRouteImport } from './routes/doctors'
 import { Route as GalleryRouteImport } from './routes/gallery'
 import { Route as OrisRouteImport } from './routes/oris'
@@ -22,6 +23,8 @@ import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as ReviewsRouteImport } from './routes/reviews'
 import { Route as TermsRouteImport } from './routes/terms'
 import { Route as UtopiaRouteImport } from './routes/utopia'
+import { Route as V1RouteImport } from './routes/v1'
+import { Route as V2RouteImport } from './routes/v2'
 import { Route as BlogIndexRouteImport } from './routes/blog.index'
 import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
 import { Route as DoctorsSlugRouteImport } from './routes/doctors.$slug'
@@ -51,6 +54,11 @@ const BookRoute = BookRouteImport.update({
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DentiaRoute = DentiaRouteImport.update({
+  id: '/dentia',
+  path: '/dentia',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DoctorsRoute = DoctorsRouteImport.update({
@@ -93,6 +101,16 @@ const UtopiaRoute = UtopiaRouteImport.update({
   path: '/utopia',
   getParentRoute: () => rootRouteImport,
 } as any)
+const V1Route = V1RouteImport.update({
+  id: '/v1',
+  path: '/v1',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const V2Route = V2RouteImport.update({
+  id: '/v2',
+  path: '/v2',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BlogIndexRoute = BlogIndexRouteImport.update({
   id: '/blog/',
   path: '/blog/',
@@ -125,6 +143,7 @@ export interface FileRoutesByFullPath {
   '/admin': typeof AdminRoute
   '/book': typeof BookRoute
   '/contact': typeof ContactRoute
+  '/dentia': typeof DentiaRoute
   '/doctors': typeof DoctorsRouteWithChildren
   '/gallery': typeof GalleryRoute
   '/oris': typeof OrisRoute
@@ -133,6 +152,8 @@ export interface FileRoutesByFullPath {
   '/reviews': typeof ReviewsRoute
   '/terms': typeof TermsRoute
   '/utopia': typeof UtopiaRoute
+  '/v1': typeof V1Route
+  '/v2': typeof V2Route
   '/blog/$slug': typeof BlogSlugRoute
   '/doctors/$slug': typeof DoctorsSlugRoute
   '/services/$slug': typeof ServicesSlugRoute
@@ -145,6 +166,7 @@ export interface FileRoutesByTo {
   '/admin': typeof AdminRoute
   '/book': typeof BookRoute
   '/contact': typeof ContactRoute
+  '/dentia': typeof DentiaRoute
   '/doctors': typeof DoctorsRouteWithChildren
   '/gallery': typeof GalleryRoute
   '/oris': typeof OrisRoute
@@ -153,6 +175,8 @@ export interface FileRoutesByTo {
   '/reviews': typeof ReviewsRoute
   '/terms': typeof TermsRoute
   '/utopia': typeof UtopiaRoute
+  '/v1': typeof V1Route
+  '/v2': typeof V2Route
   '/blog/$slug': typeof BlogSlugRoute
   '/doctors/$slug': typeof DoctorsSlugRoute
   '/services/$slug': typeof ServicesSlugRoute
@@ -166,6 +190,7 @@ export interface FileRoutesById {
   '/admin': typeof AdminRoute
   '/book': typeof BookRoute
   '/contact': typeof ContactRoute
+  '/dentia': typeof DentiaRoute
   '/doctors': typeof DoctorsRouteWithChildren
   '/gallery': typeof GalleryRoute
   '/oris': typeof OrisRoute
@@ -174,6 +199,8 @@ export interface FileRoutesById {
   '/reviews': typeof ReviewsRoute
   '/terms': typeof TermsRoute
   '/utopia': typeof UtopiaRoute
+  '/v1': typeof V1Route
+  '/v2': typeof V2Route
   '/blog/$slug': typeof BlogSlugRoute
   '/doctors/$slug': typeof DoctorsSlugRoute
   '/services/$slug': typeof ServicesSlugRoute
@@ -188,6 +215,7 @@ export interface FileRouteTypes {
     | '/admin'
     | '/book'
     | '/contact'
+    | '/dentia'
     | '/doctors'
     | '/gallery'
     | '/oris'
@@ -196,6 +224,8 @@ export interface FileRouteTypes {
     | '/reviews'
     | '/terms'
     | '/utopia'
+    | '/v1'
+    | '/v2'
     | '/blog/$slug'
     | '/doctors/$slug'
     | '/services/$slug'
@@ -208,6 +238,7 @@ export interface FileRouteTypes {
     | '/admin'
     | '/book'
     | '/contact'
+    | '/dentia'
     | '/doctors'
     | '/gallery'
     | '/oris'
@@ -216,6 +247,8 @@ export interface FileRouteTypes {
     | '/reviews'
     | '/terms'
     | '/utopia'
+    | '/v1'
+    | '/v2'
     | '/blog/$slug'
     | '/doctors/$slug'
     | '/services/$slug'
@@ -228,6 +261,7 @@ export interface FileRouteTypes {
     | '/admin'
     | '/book'
     | '/contact'
+    | '/dentia'
     | '/doctors'
     | '/gallery'
     | '/oris'
@@ -236,6 +270,8 @@ export interface FileRouteTypes {
     | '/reviews'
     | '/terms'
     | '/utopia'
+    | '/v1'
+    | '/v2'
     | '/blog/$slug'
     | '/doctors/$slug'
     | '/services/$slug'
@@ -249,6 +285,7 @@ export interface RootRouteChildren {
   AdminRoute: typeof AdminRoute
   BookRoute: typeof BookRoute
   ContactRoute: typeof ContactRoute
+  DentiaRoute: typeof DentiaRoute
   DoctorsRoute: typeof DoctorsRouteWithChildren
   GalleryRoute: typeof GalleryRoute
   OrisRoute: typeof OrisRoute
@@ -257,6 +294,8 @@ export interface RootRouteChildren {
   ReviewsRoute: typeof ReviewsRoute
   TermsRoute: typeof TermsRoute
   UtopiaRoute: typeof UtopiaRoute
+  V1Route: typeof V1Route
+  V2Route: typeof V2Route
   BlogSlugRoute: typeof BlogSlugRoute
   ServicesSlugRoute: typeof ServicesSlugRoute
   BlogIndexRoute: typeof BlogIndexRoute
@@ -298,6 +337,13 @@ declare module '@tanstack/react-router' {
       path: '/contact'
       fullPath: '/contact'
       preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/dentia': {
+      id: '/dentia'
+      path: '/dentia'
+      fullPath: '/dentia'
+      preLoaderRoute: typeof DentiaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/doctors': {
@@ -356,6 +402,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof UtopiaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/v1': {
+      id: '/v1'
+      path: '/v1'
+      fullPath: '/v1'
+      preLoaderRoute: typeof V1RouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/v2': {
+      id: '/v2'
+      path: '/v2'
+      fullPath: '/v2'
+      preLoaderRoute: typeof V2RouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blog/': {
       id: '/blog/'
       path: '/blog'
@@ -411,6 +471,7 @@ const rootRouteChildren: RootRouteChildren = {
   AdminRoute: AdminRoute,
   BookRoute: BookRoute,
   ContactRoute: ContactRoute,
+  DentiaRoute: DentiaRoute,
   DoctorsRoute: DoctorsRouteWithChildren,
   GalleryRoute: GalleryRoute,
   OrisRoute: OrisRoute,
@@ -419,6 +480,8 @@ const rootRouteChildren: RootRouteChildren = {
   ReviewsRoute: ReviewsRoute,
   TermsRoute: TermsRoute,
   UtopiaRoute: UtopiaRoute,
+  V1Route: V1Route,
+  V2Route: V2Route,
   BlogSlugRoute: BlogSlugRoute,
   ServicesSlugRoute: ServicesSlugRoute,
   BlogIndexRoute: BlogIndexRoute,

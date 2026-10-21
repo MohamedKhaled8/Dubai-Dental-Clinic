@@ -127,7 +127,7 @@ export function HeroSearchSection({ onOpenGlobalSearch }: HeroSearchSectionProps
       {/* Popular Symptom Tags */}
       <div className="mt-3 flex flex-wrap items-center justify-center gap-1.5 text-xs">
         <span className="font-bold text-[#8c6d46] text-[11px] me-1">
-          {isAr ? "الأكثر طلباً بالدقي:" : "Popular in Dokki:"}
+          {isAr ? "الأكثر طلباً بالهرم:" : "Popular in Al-Haram:"}
         </span>
 
         {symptomQuickChips.map((chip, idx) => (

@@ -56,7 +56,7 @@ export const searchIndex: SearchEntry[] = [
     category: "symptom",
     title: { ar: "فقدان سن أو ضرس (صعوبة في المضغ)", en: "Missing Tooth or Molar (Chewing Issue)" },
     description: {
-      ar: "تعويض الأسنان المفقودة بجذور تيتانيوم دائمة أو جسور ثابتة في الدقي لحماية العظم ومنع ميل الأسنان.",
+      ar: "تعويض الأسنان المفقودة بجذور تيتانيوم دائمة أو جسور ثابتة في الهرم لحماية العظم ومنع ميل الأسنان.",
       en: "Permanent titanium implants or fixed bridges to restore chewing function and preserve jaw bone.",
     },
     tags: [
@@ -242,7 +242,7 @@ export const searchIndex: SearchEntry[] = [
     badge: { ar: "نخبة الأطباء", en: "Specialist" },
     metaInfo: {
       doctorName: d.name,
-      duration: { ar: "مواعيد يومية بالدقي", en: "Daily schedule in Dokki" },
+      duration: { ar: "مواعيد يومية بالهرم", en: "Daily schedule in Al-Haram" },
     },
   })),
 
@@ -348,20 +348,21 @@ export const searchIndex: SearchEntry[] = [
   {
     id: "faq-location-hours",
     category: "faq",
-    title: { ar: "عنوان العيادة في الدقي ومواعيد العمل وحجز الطوارئ", en: "Clinic Location in Dokki & Working Hours" },
+    title: { ar: "عنوان العيادة في الهرم ومواعيد العمل وحجز الطوارئ", en: "Clinic Location in Al-Haram & Working Hours" },
     description: {
-      ar: "١١٦ شارع محيي الدين أبو العز، الطابق التاسع، الدقي، الجيزة. نعمل يومياً من الساعة ٢:٠٠ ظهراً حتى ١٠:٠٠ مساءً.",
-      en: "116 Mohi El Din Abou El Ezz St., 9th Floor, Dokki, Giza. Open daily from 2:00 PM to 10:00 PM.",
+      ar: "٢٠ شارع عز الدين عمر، متفرع من شارع الهرم (محطة العريش، برج المروة)، الطالبية، الهرم، الجيزة. نعمل يومياً من الساعة ١:٠٠ ظهراً حتى ١١:٠٠ مساءً (الجمعة بموعد مسبق).",
+      en: "20 Ezz El-Din Omar St., Al-Haram (El-Arish Station, Al-Marwa Tower), Talbiya, Giza. Open daily 1:00 PM – 11:00 PM (Friday by appointment).",
     },
     tags: [
       "عنوان",
       "موقع",
-      "الدقي",
-      "شارع محيي الدين",
+      "الهرم",
+      "شارع عز الدين عمر",
+      "العريش",
       "مواعيد",
       "طوارئ",
       "location",
-      "dokki",
+      "haram",
       "address",
       "hours",
       "working hours",

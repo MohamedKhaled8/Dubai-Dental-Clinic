@@ -45,7 +45,7 @@ export function OrisPreloader() {
         <div className="relative text-center">
           {/* Base Dimmed */}
           <div className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white/20 uppercase font-sans">
-            UTOPIA CLINICS
+            DUBAI DENTAL
           </div>
           {/* Animated Revealed */}
           <div
@@ -55,11 +55,11 @@ export function OrisPreloader() {
               willChange: "clip-path",
             }}
           >
-            UTOPIA CLINICS
+            DUBAI DENTAL
           </div>
         </div>
         <span className="text-xs tracking-widest text-blue-200 uppercase mt-3 font-semibold">
-          Dokki · Modern Specialist Care
+          Dubai Dental Clinic · Specialist Care
         </span>
       </div>
     </aside>
@@ -87,14 +87,14 @@ export function OrisHeader() {
     >
       <a href="#oris-hero" className="no-underline flex items-center gap-2.5">
         <div className="w-8 h-8 rounded-full bg-[#13314a] text-white flex items-center justify-center font-bold text-sm shadow-xs">
-          U
+          D
         </div>
         <div>
           <p className="text-lg sm:text-xl font-bold tracking-tight text-oris-secondary cursor-pointer leading-tight">
-            Utopia Clinics
+            Dubai Dental Clinic
           </p>
           <span className="text-[10px] text-gray-500 font-medium block">
-            Dokki, Giza · عيادات يوتوبيا
+            عيادة دبي لطب وزراعة الأسنان
           </span>
         </div>
       </a>
@@ -102,11 +102,11 @@ export function OrisHeader() {
       <div className="flex items-center gap-3 sm:gap-4">
         {/* Quick Phone Call Pill */}
         <a
-          href="tel:01117655583"
+          href="tel:01022013314"
           className="hidden md:inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full border border-gray-200 bg-white/70 backdrop-blur-xs text-xs font-semibold text-[#13314a] hover:bg-white hover:border-[#3365e2] transition-all"
         >
           <span className="w-2 h-2 rounded-full bg-emerald-500" />
-          <span dir="ltr">0111 765 5583</span>
+          <span dir="ltr">010 2201 3314</span>
         </a>
 
         {/* Book Appointment Instant Trigger */}

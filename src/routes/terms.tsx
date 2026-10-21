@@ -18,8 +18,8 @@ function TermsPage() {
         title={isAr ? "الشروط والأحكام الطبية" : "Terms & Medical Disclaimers"}
         sub={
           isAr
-            ? "سياسات الاستخدام والشفافية الطبية لعيادات يوتوبيا لطب وتجميل الأسنان بالدقي."
-            : "Usage policies and medical disclosures for Utopia Dental Clinics in Dokki, Giza."
+            ? "سياسات الاستخدام والشفافية الطبية لمركز دبي لطب وتجميل الأسنان بالهرم."
+            : "Usage policies and medical disclosures for Dubai Dental Clinic in Al-Haram, Giza."
         }
         crumb={isAr ? "الشروط والأحكام" : "Terms"}
       />
@@ -58,8 +58,8 @@ function TermsPage() {
             </h3>
             <p>
               {isAr
-                ? "تلتزم عيادات يوتوبيا بالحفاظ التام على سرية السجلات والبيانات الطبية لجميع مراجعيها، ولا يتم مشاركة أي بيانات اتصال أو معلومات علاجية مع أي طرف ثالث تجاري أو تسويقي."
-                : "Utopia Dental Clinics strictly adheres to patient confidentiality and medical ethics. Contact details and clinical notes are never shared with third-party advertisers."}
+                ? "يلتزم مركز دبي لطب الأسنان بالحفاظ التام على سرية السجلات والبيانات الطبية لجميع مراجعيه، ولا يتم مشاركة أي بيانات اتصال أو معلومات علاجية مع أي طرف ثالث تجاري أو تسويقي."
+                : "Dubai Dental Clinic strictly adheres to patient confidentiality and medical ethics. Contact details and clinical notes are never shared with third-party advertisers."}
             </p>
           </div>
 
@@ -69,7 +69,7 @@ function TermsPage() {
             </h3>
             <p>
               {isAr
-                ? "تعتمد عيادات يوتوبيا بروتوكول تعقيم أوروبي متقدم (Class B Autoclave) مع فحص كيميائي وحراري دوري لكل دورة تعقيم لضمان أعلى مستويات الأمان البيولوجي للمرضى والفريق الطبي."
+                ? "يعتمد مركز دبي لطب الأسنان بروتوكول تعقيم أوروبي متقدم (Class B Autoclave) مع فحص كيميائي وحراري دوري لكل دورة تعقيم لضمان أعلى مستويات الأمان البيولوجي للمرضى والفريق الطبي."
                 : "The clinic adheres to hospital-grade Class B European sterilization standards, with routine biological and chemical indicators for each cycle to guarantee maximum clinical safety."}
             </p>
           </div>
@@ -80,8 +80,8 @@ function TermsPage() {
             </h3>
             <p>
               {isAr
-                ? "جميع النصوص والمحتويات التحريرية والتصاميم والشعارات المنشورة على هذا الموقع محمية ومملوكة حصرياً لعيادات يوتوبيا لطب وتجميل الأسنان."
-                : "All editorial content, design assets, trademarks, and visual materials on this website are protected and proprietary to Utopia Dental Clinics."}
+                ? "جميع النصوص والمحتويات التحريرية والتصاميم والشعارات المنشورة على هذا الموقع محمية ومملوكة حصرياً لمركز دبي لطب وجراحة وتجميل الأسنان."
+                : "All editorial content, design assets, trademarks, and visual materials on this website are protected and proprietary to Dubai Dental Clinic."}
             </p>
           </div>
 

@@ -24,12 +24,12 @@ export const Route = createFileRoute("/patients")({
   head: () => ({
     meta: [
       {
-        title: "دليل المراجع والزيارة الأولى | عيادات يوتوبيا لطب وتجميل وزراعة الأسنان بالدقي",
+        title: "دليل المراجع والزيارة الأولى | مركز دبي لطب الأسنان بالهرم",
       },
       {
         name: "description",
         content:
-          "دليل إرشادي شامل لمراجعي عيادات يوتوبيا بالدقي: خطوات الزيارة الأولى، المستندات المطلوبة، والأسئلة الشائعة.",
+          "دليل إرشادي شامل لمراجعي مركز دبي لطب الأسنان بالهرم: خطوات الزيارة الأولى، المستندات المطلوبة، والأسئلة الشائعة.",
       },
     ],
   }),
@@ -63,11 +63,11 @@ function PatientsPage() {
   return (
     <div className="min-h-screen bg-white text-[#0B1B3A]">
       <PageHero
-        title={isAr ? "دليل مراجعي عيادات يوتوبيا" : "Patient Care & Visit Guide"}
+        title={isAr ? "دليل مراجعي مركز دبي لطب الأسنان" : "Patient Care & Visit Guide"}
         sub={
           isAr
-            ? "كل ما يهمك معرفته لتحويل زيارتك الأولى إلى تجربة علاجية هادئة ومريحة بالدقي."
-            : "Everything you need to know for a calm, comfortable first dental visit in Dokki."
+            ? "كل ما يهمك معرفته لتحويل زيارتك الأولى إلى تجربة علاجية هادئة ومريحة بالهرم."
+            : "Everything you need to know for a calm, comfortable first dental visit in Al-Haram."
         }
         crumb={isAr ? "دليل المراجع" : "Patients"}
       />
@@ -188,12 +188,12 @@ function PatientsPage() {
         {/* CTA Card */}
         <div className="mt-14 rounded-2xl bg-[#0B1B3A] p-8 text-center text-white">
           <h3 className="text-xl font-bold">
-            {isAr ? "جاهز لبدء استشارتك مع نخبة أطباء الدقي؟" : "Ready for Your Consultation in Dokki?"}
+            {isAr ? "جاهز لبدء استشارتك مع نخبة أطباء مركز دبي؟" : "Ready for Your Consultation in Al-Haram?"}
           </h3>
           <p className="mt-2 text-xs text-white/70 max-w-md mx-auto">
             {isAr
-              ? "فريقنا الطبي يرحب بك يومياً من ٢:٠٠ ظهراً حتى ١٠:٠٠ مساءً بالدقي."
-              : "Our clinical team welcomes you daily from 2:00 PM to 10:00 PM in Dokki."}
+              ? "فريقنا الطبي يرحب بك يومياً من ١:٠٠ ظهراً حتى ١١:٠٠ مساءً بالهرم."
+              : "Our clinical team welcomes you daily from 1:00 PM to 11:00 PM in Al-Haram."}
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-3">
             <Link
@@ -204,7 +204,7 @@ function PatientsPage() {
               <span>{isAr ? "طلب حجز موعد الآن" : "Book an Appointment"}</span>
             </Link>
             <a
-              href="https://wa.me/201117655583"
+              href="https://wa.me/201022013314"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-lg border border-white/30 bg-white/10 px-6 py-3 text-xs font-bold text-white hover:bg-white/20 transition-all"

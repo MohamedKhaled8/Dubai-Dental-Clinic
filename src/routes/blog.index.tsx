@@ -10,12 +10,12 @@ export const Route = createFileRoute("/blog/")({
   head: () => ({
     meta: [
       {
-        title: "مدونة التثقيف السريري وصحة الأسنان | Dental Blog — Utopia Dokki",
+        title: "مدونة التثقيف السريري وصحة الأسنان | Dental Blog — Dubai Dental Clinic",
       },
       {
         name: "description",
         content:
-          "مقالات وإرشادات توعوية من أطباء عيادات يوتوبيا بالدقي: زراعة الأسنان، أسنان الأطفال، العناية باللثة، والزيارة الأولى.",
+          "مقالات وإرشادات توعوية من أطباء عيادة دبي لطب الأسنان: زراعة الأسنان، تقويم الأسنان، تجميل الأسنان، والعناية بصحة الفم.",
       },
     ],
   }),
@@ -64,7 +64,7 @@ function BlogIndexPage() {
             >
               <div>
                 <div className="flex items-center justify-between text-[11px] text-[#16372F]/60 mb-4">
-                  <span className="font-mono">{p.date}</span>
+                  <span className="font-mono">{p.publishedAt[lang]}</span>
                   <span className="flex items-center gap-1 font-semibold">
                     <Clock className="w-3 h-3 text-[#C2A06A]" />
                     {p.readTime[lang]}

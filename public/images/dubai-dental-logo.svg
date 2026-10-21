@@ -1,0 +1,8 @@
+<svg width="240" height="60" viewBox="0 0 240 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="6" y="6" width="48" height="48" rx="14" fill="#0B4FC7" fill-opacity="0.08" stroke="#0B4FC7" stroke-width="1.8"/>
+  <path d="M21 21L25 24.5L30 19L35 24.5L39 21V26H21V21Z" fill="#C2A06A"/>
+  <path d="M23 27C23 24 26 23.5 30 23.5C34 23.5 37 24 37 27C37 32 35.5 36 34.5 39.5C33.5 43 32 43.5 30 42C28 43.5 26.5 43 25.5 39.5C24.5 36 23 32 23 27Z" stroke="#0B4FC7" stroke-width="2.2" stroke-linejoin="round" fill="#0B4FC7" fill-opacity="0.1"/>
+  <circle cx="36" cy="22" r="1.5" fill="#C2A06A"/>
+  <text x="64" y="30" font-family="Tajawal, sans-serif" font-size="18" font-weight="700" fill="#0B1B3A">مركز دبي لطب الأسنان</text>
+  <text x="64" y="46" font-family="Tajawal, sans-serif" font-size="10.5" font-weight="600" fill="#4A7CD2" letter-spacing="0.5">الهرم · زراعة · تقويم · تجميل</text>
+</svg>

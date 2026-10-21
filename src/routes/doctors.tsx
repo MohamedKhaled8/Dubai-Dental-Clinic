@@ -11,12 +11,12 @@ export const Route = createFileRoute("/doctors")({
   head: () => ({
     meta: [
       {
-        title: "أطباء واستشاريو عيادات يوتوبيا لطب الأسنان بالدقي | Doctors & Specialists",
+        title: "أطباء واستشاريو مركز دبي لطب الأسنان بالهرم | Doctors & Specialists",
       },
       {
         name: "description",
         content:
-          "تعرف على الفريق الطبي واستشاريي عيادات يوتوبيا في الدقي: زراعة الأسنان، جراحة الفم، تقويم الأسنان، وطب أسنان الأطفال.",
+          "تعرف على الفريق الطبي واستشاريي مركز دبي لطب الأسنان في الهرم: زراعة الأسنان، جراحة الفم، تقويم الأسنان، وعلاج الجذور والتركيبات.",
       },
     ],
   }),
@@ -44,11 +44,11 @@ function DoctorsPage() {
   return (
     <div className="min-h-screen bg-[#FBF9F4] text-[#0E1F1C]">
       <PageHero
-        title={isAr ? "نخبة أطباء واستشاريي يوتوبيا" : "Specialists & Clinic Leadership"}
+        title={isAr ? "نخبة أطباء واستشاريي مركز دبي" : "Specialists & Clinic Leadership"}
         sub={
           isAr
-            ? "فريق طبي متكامل يجمع بين التخصص الأكاديمي الدقيق والخبرة الإكلينيكية المتقدمة بالدقي."
-            : "A multidisciplinary team of certified dental consultants dedicated to precision, clinical comfort, and patient care in Dokki."
+            ? "فريق طبي متكامل يجمع بين التخصص الأكاديمي الدقيق والخبرة الإكلينيكية المتقدمة بالهرم."
+            : "A multidisciplinary team of certified dental consultants dedicated to precision, clinical comfort, and patient care in Al-Haram."
         }
         crumb={isAr ? "الفريق الطبي" : "Doctors"}
       />
@@ -65,7 +65,7 @@ function DoctorsPage() {
                 {isAr ? "استشاريون معتمدون" : "Certified Specialists"}
               </h3>
               <p className="mt-0.5 text-xs text-[#16372F]/70">
-                {isAr ? "خبرات علاجية وأكاديمية متقدمة بالدقي" : "Advanced clinical expertise"}
+                {isAr ? "خبرات علاجية وأكاديمية متقدمة بالهرم" : "Advanced clinical expertise"}
               </p>
             </div>
           </div>
@@ -93,7 +93,7 @@ function DoctorsPage() {
                 {isAr ? "مواعيد يومية منتظمة" : "Daily Consultations"}
               </h3>
               <p className="mt-0.5 text-xs text-[#16372F]/70">
-                {isAr ? "يوميًا ٢:٠٠ م حتى ١٠:٠٠ م" : "Daily 2:00 PM – 10:00 PM"}
+                {isAr ? "يوميًا ١:٠٠ م حتى ١١:٠٠ م" : "Daily 1:00 PM – 11:00 PM"}
               </p>
             </div>
           </div>
@@ -108,7 +108,7 @@ function DoctorsPage() {
             <span>{isAr ? "الأطباء المعتمدون" : "Active Medical Staff"}</span>
           </span>
           <h2 className="mt-2 font-display text-3xl font-bold text-[#0E1F1C]">
-            {isAr ? "استشاريو عيادات يوتوبيا بالدقي" : "Attending Specialists"}
+            {isAr ? "استشاريو مركز دبي لطب الأسنان" : "Attending Specialists"}
           </h2>
         </div>
 

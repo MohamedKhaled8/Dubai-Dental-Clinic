@@ -1,0 +1,38 @@
+{
+  "name_ar": "مركز دبي لطب الأسنان",
+  "name_en": "Dubai Dental Clinic",
+  "rating": 4.5,
+  "reviews_count": 1200,
+  "address_ar": "٢٠ شارع عز الدين عمر، متفرع من شارع الهرم (محطة العريش، برج المروة، بجوار حلواني بشبش وخلف بنك مصر)، الطالبية، الهرم، الجيزة، مصر",
+  "address_en": "20 Ezz El-Din Omar St., Al-Haram (El-Arish Station, Al-Marwa Tower), Talbiya, Giza, Egypt",
+  "phone": "01022013314",
+  "phone_secondary": "01028665801",
+  "whatsapp": "https://wa.me/201022013314",
+  "maps_url": "https://maps.app.goo.gl/uvr71SPw8w17bNsC6",
+  "coordinates": {
+    "lat": 29.99191,
+    "lng": 31.161962
+  },
+  "working_hours_ar": "يومياً من ١:٠٠ ظهراً حتى ١١:٠٠ مساءً (الجمعة بموعد مسبق)",
+  "working_hours_en": "Daily 1:00 PM – 11:00 PM (Friday by appointment)",
+  "lead_dentists": [
+    {
+      "name_ar": "د. كريم كمال محمد",
+      "name_en": "Dr. Karim Kamal",
+      "title_ar": "مدير المركز وأخصائي علاج الجذور والتركيبات الثابتة",
+      "title_en": "Clinic Director & Endodontics Specialist"
+    },
+    {
+      "name_ar": "د. مصطفى أبو الدهب",
+      "name_en": "Dr. Mostafa Abo El-Dahab",
+      "title_ar": "استشاري جراحة الفم وزراعة الأسنان",
+      "title_en": "Oral Surgery & Dental Implants Consultant"
+    },
+    {
+      "name_ar": "د. أحمد فاروق",
+      "name_en": "Dr. Ahmed Farouk",
+      "title_ar": "أخصائي تقويم الأسنان والفكين",
+      "title_en": "Orthodontics Specialist"
+    }
+  ]
+}

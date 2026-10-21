@@ -146,12 +146,12 @@ const steps: ProcessStep[] = [
       ar: [
         "اختبار اللون والشفافية وتطابقها مع ملامح الوجه والابتسامة",
         "تثبيت نهائي متين باستخدام لواصق طبية معتمدة دولياً",
-        "جدول متابعة دورية بالدقي وإرشادات العناية للحفاظ على النتيجة لسنوات طويلة",
+        "جدول متابعة دورية بالهرم وإرشادات العناية للحفاظ على النتيجة لسنوات طويلة",
       ],
       en: [
         "Verification of shade translucency against real daylight and smile dynamics",
         "Permanent bonding using internationally certified biocompatible cements",
-        "Structured maintenance visits in Dokki with home-care guidelines",
+        "Structured maintenance visits in Al-Haram with home-care guidelines",
       ],
     },
     quote: {
@@ -175,7 +175,7 @@ export function ClinicalProcessWorkflow() {
         <div>
           <span className="eyebrow">
             <Scan className="h-3.5 w-3.5 text-[#8c6d46]" />
-            {isAr ? "رحلة المراجع في عيادات يوتوبيا" : "PRECISION PATIENT JOURNEY"}
+            {isAr ? "رحلة المراجع في مركز دبي لطب الأسنان" : "PRECISION PATIENT JOURNEY"}
           </span>
 
           <h2 className="mt-4 font-display text-2xl font-bold text-[#0f172a] sm:text-3xl md:text-4xl">
@@ -186,7 +186,7 @@ export function ClinicalProcessWorkflow() {
 
           <p className="mt-2 text-xs md:text-sm text-[#52525b] max-w-2xl leading-relaxed">
             {isAr
-              ? "نؤمن بأن الوضوح يزيل القلق؛ صممنا مسار رعايتك في عيادات يوتوبيا بالدقي ليكون شفافاً وخالياً من المفاجآت، بأحدث الأجهزة الرقمية والتعقيم الجراحي المعتمد."
+              ? "نؤمن بأن الوضوح يزيل القلق؛ صممنا مسار رعايتك في مركز دبي لطب الأسنان بالهرم ليكون شفافاً وخالياً من المفاجآت، بأحدث الأجهزة الرقمية والتعقيم الجراحي المعتمد."
               : "Calm care starts with complete transparency. Every step is clearly planned, digitally executed, and hospital-grade sterile."}
           </p>
         </div>

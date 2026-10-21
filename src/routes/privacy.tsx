@@ -8,12 +8,12 @@ export const Route = createFileRoute("/privacy")({
   head: () => ({
     meta: [
       {
-        title: "إشعار الخصوصية وسرية البيانات | Privacy Notice — Utopia Dokki",
+        title: "إشعار الخصوصية وسرية البيانات | Privacy Notice — Dubai Dental Clinic",
       },
       {
         name: "description",
         content:
-          "إشعار الخصوصية وحماية البيانات وسرية السجلات الطبية في عيادات يوتوبيا لطب وتجميل وزراعة الأسنان في الدقي.",
+          "إشعار الخصوصية وحماية البيانات وسرية السجلات الطبية في مركز دبي لطب وجراحة وتجميل الأسنان في الهرم.",
       },
     ],
   }),
@@ -47,7 +47,7 @@ function PrivacyPage() {
                 {isAr ? "مبادئ الخصوصية وحماية بيانات المرضى" : "Data Protection & Ethics"}
               </h2>
               <p className="text-xs text-[#16372F]/60">
-                {clinicData.name[lang]} · Dokki, Giza
+                {clinicData.name[lang]} · Al-Haram, Giza
               </p>
             </div>
           </div>
@@ -55,8 +55,8 @@ function PrivacyPage() {
           <div className="space-y-6 text-xs md:text-sm leading-relaxed text-[#16372F]/80">
             <p className="text-sm md:text-base font-semibold text-[#0E1F1C]">
               {isAr
-                ? "تضع عيادات يوتوبيا خصوصية وسرية التاريخ المرضي لكل مراجع في مقدمة أولوياتها الأخلاقية والمهنية."
-                : "Utopia Dental Clinics places patient confidentiality, diagnostic history, and personal contact privacy at the highest professional standard."}
+                ? "يضع مركز دبي لطب الأسنان خصوصية وسرية التاريخ المرضي لكل مراجع في مقدمة أولوياته الأخلاقية والمهنية."
+                : "Dubai Dental Clinic places patient confidentiality, diagnostic history, and personal contact privacy at the highest professional standard."}
             </p>
 
             <div className="rounded-2xl border border-[#C2A06A]/20 bg-[#F6F1E7]/60 p-6 space-y-3">

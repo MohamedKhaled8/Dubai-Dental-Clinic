@@ -33,7 +33,7 @@ export function DoctorCapsuleCard({ doctor }: DoctorCapsuleCardProps) {
           {/* Specialist Pin Badge */}
           <div className="absolute -bottom-2 flex h-6 items-center gap-1 rounded-full border border-[#c2a06a]/40 bg-[#fbf9f4] px-2 text-[10px] font-bold text-[#0e1f1c] shadow-xs">
             <Award className="h-3 w-3 text-[#c2a06a]" />
-            <span>Dokki</span>
+            <span>{isAr ? "الهرم" : "Al-Haram"}</span>
           </div>
         </div>
 

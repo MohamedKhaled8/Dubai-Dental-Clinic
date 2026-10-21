@@ -12,7 +12,7 @@ import {
 import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
-import { reportLovableError } from "../lib/lovable-error-reporting";
+import { reportError } from "../lib/lovable-error-reporting";
 import { I18nProvider } from "../lib/i18n";
 import { Header, Footer, TopInfoBar } from "../components/site";
 import {
@@ -21,6 +21,7 @@ import {
   DesktopFloatingWhatsApp,
   CustomCursor,
 } from "../components/GlobalEnhancements";
+import { SiteSwitcher } from "../components/SiteSwitcher";
 
 function NotFoundComponent() {
   return (
@@ -29,7 +30,7 @@ function NotFoundComponent() {
         <h1 className="text-7xl font-display font-bold text-[#0E1F1C]">404</h1>
         <h2 className="mt-4 text-xl font-bold text-[#0E1F1C]">الصفحة غير موجودة · Page Not Found</h2>
         <p className="mt-2 text-sm text-[#16372F]/70">
-          لم نتمكن من العثور على الصفحة المطلوبة. يمكنك العودة إلى الصفحة الرئيسية لعيادات يوتوبيا.
+          لم نتمكن من العثور على الصفحة المطلوبة. يمكنك العودة إلى الصفحة الرئيسية لمركز دبي لطب الأسنان.
         </p>
         <div className="mt-6">
           <Link
@@ -48,7 +49,7 @@ function ErrorComponent({ error, reset }: ErrorComponentProps) {
   console.error(error);
   const router = useRouter();
   useEffect(() => {
-    reportLovableError(error, { boundary: "tanstack_root_error_component" });
+    reportError(error, { boundary: "tanstack_root_error_component" });
   }, [error]);
 
   return (
@@ -92,11 +93,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "عيادات يوتوبيا لطب وتجميل وزراعة الأسنان بالدقي | Utopia Dental Clinics" },
+      { title: "مركز دبي لطب الأسنان بالهرم | Dubai Dental Clinic" },
       {
         name: "description",
         content:
-          "عيادات يوتوبيا التخصصية لطب وتجميل وزراعة الأسنان في الدقي، الجيزة. تجربة علاجية هادئة تحت إشراف نخبة من الاستشاريين وأحدث تقنيات التعقيم والزراعة.",
+          "مركز دبي لطب وجراحة وتجميل وزراعة الأسنان في الهرم، الجيزة (شارع عز الدين عمر - محطة العريش). رعاية تخصصية لطب الأسنان، علاج الجذور، زراعة وتقويم الأسنان بأحدث التقنيات.",
       },
       { name: "robots", content: "index, follow" },
     ],
@@ -137,9 +138,11 @@ function RootShell({ children }: { children: ReactNode }) {
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
   const pathname = useRouterState({ select: (s) => s.location.pathname });
-  const isOris = pathname === "/" || pathname === "/oris";
+  const isOris = pathname === "/" || pathname === "/oris" || pathname === "/v1";
+  const isV2 = pathname.startsWith("/v2");
+  const isDentia = pathname.startsWith("/dentia");
 
-  if (isOris) {
+  if (isOris || isV2 || isDentia) {
     return (
       <QueryClientProvider client={queryClient}>
         <I18nProvider>

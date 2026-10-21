@@ -17,8 +17,8 @@ export const postsData: BlogPost[] = [
     publishedAt: { ar: "أكتوبر ٢٠٢٦", en: "October 2026" },
     content: [
       {
-        ar: "تبدأ الزيارة الناجحة في عيادات طب الأسنان دائماً بحوار مريح والاستماع الجيد. في عيادات يوتوبيا بالدقي، لا نهدف إلى البدء في أي تدخل علاجي قبل أن يشعر المراجع بالاطمئنان التام، ويتعرف على الطبيب، ويشرح مشاكله أو مخاوفه السابقة.",
-        en: "A rewarding dental visit begins with attentive listening. At Utopia Clinics Dokki, our primary focus during your first visit is to understand your goals, listen to any previous dental concerns, and build mutual trust before deciding on any procedure.",
+        ar: "تبدأ الزيارة الناجحة في عيادات طب الأسنان دائماً بحوار مريح والاستماع الجيد. في مركز دبي لطب الأسنان بالهرم، لا نهدف إلى البدء في أي تدخل علاجي قبل أن يشعر المراجع بالاطمئنان التام، ويتعرف على الطبيب، ويشرح مشاكله أو مخاوفه السابقة.",
+        en: "A rewarding dental visit begins with attentive listening. At Dubai Dental Clinic Al-Haram, our primary focus during your first visit is to understand your goals, listen to any previous dental concerns, and build mutual trust before deciding on any procedure.",
       },
       {
         ar: "تتضمن الجلسة الأولى فحصاً بصرياً دقيقاً لجميع الأسنان والأنسجة اللثوية، مع فحص مفصل الفك وطريقة الإطباق. وعند الحاجة، يتم التقاط صور شعاعية رقمية خفيفة الجرعة (Digital X-rays) أو مسح ثلاثي الأبعاد لفهم ما يحدث تحت سطح اللثة وبين الأسنان بدقة تامة.",
@@ -75,8 +75,8 @@ export const postsData: BlogPost[] = [
     publishedAt: { ar: "أغسطس ٢٠٢٦", en: "August 2026" },
     content: [
       {
-        ar: "تطورت زراعة الأسنان خلال العقدين الماضيين من إجراء يعتمد على التقدير السريري إلى علم رقمي موجه فائق الدقة. اليوم، لا تبدأ أي عملية زراعة موثوقة في عيادات يوتوبيا دون دراسة مسبقة للأشعة المقطعية ثلاثية الأبعاد (CBCT).",
-        en: "Dental implantology has evolved from an empirical surgical discipline into an exact digital science. At Utopia, every implant journey begins with high-resolution 3D cone-beam computed tomography (CBCT).",
+        ar: "تطورت زراعة الأسنان خلال العقدين الماضيين من إجراء يعتمد على التقدير السريري إلى علم رقمي موجه فائق الدقة. اليوم، لا تبدأ أي عملية زراعة موثوقة في مركز دبي لطب الأسنان دون دراسة مسبقة للأشعة المقطعية ثلاثية الأبعاد (CBCT).",
+        en: "Dental implantology has evolved from an empirical surgical discipline into an exact digital science. At Dubai Dental Clinic, every implant journey begins with high-resolution 3D cone-beam computed tomography (CBCT).",
       },
       {
         ar: "تتيح هذه الأشعة للأخصائي رؤية مقاطع ميكرونية لعظام الفك، وقياس الارتفاع والعرض بدقة، وتحديد مسار العصب الفكي السفلي وحدود الجيوب الأنفية العلوية، مما يمنع حدوث أي إصابات تشريحية تماماً.",

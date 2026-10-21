@@ -199,8 +199,8 @@ export function PearlCrown3D() {
 
     const handlePointerMove = (e: MouseEvent | TouchEvent) => {
       const rect = container.getBoundingClientRect();
-      const clientX = "touches" in e ? e.touches[0].clientX : e.clientX;
-      const clientY = "touches" in e ? e.touches[0].clientY : e.clientY;
+      const clientX = "touches" in e ? e.touches[0]!.clientX : e.clientX;
+      const clientY = "touches" in e ? e.touches[0]!.clientY : e.clientY;
 
       const normX = ((clientX - rect.left) / rect.width) * 2 - 1;
       const normY = ((clientY - rect.top) / rect.height) * 2 - 1;
@@ -262,7 +262,8 @@ export function PearlCrown3D() {
 
         // Update brass particles
         for (let i = 0; i < particleCount; i++) {
-          const p = particleData[i];
+        const p = particleData[i];
+          if (!p) continue;
           p.angle += p.speed * delta * 0.6;
           const currentY = p.y + Math.sin(elapsed * 2 + i) * 0.05;
           dummy.position.set(Math.cos(p.angle) * p.radius, currentY, Math.sin(p.angle) * p.radius);
@@ -299,7 +300,7 @@ export function PearlCrown3D() {
           </div>
         </div>
         <span className="absolute bottom-6 rounded-full border border-[#c2a06a]/30 bg-white/80 px-4 py-1 text-xs font-bold text-[#0e1f1c] shadow-xs">
-          {isAr ? "الابتسامة اللؤلؤية — يوتوبيا" : "The Pearl Crown — Utopia"}
+          {isAr ? "الابتسامة اللؤلؤية — مركز دبي لطب الأسنان" : "The Pearl Crown — Dubai Dental Clinic"}
         </span>
       </div>
     );

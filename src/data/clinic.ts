@@ -2,43 +2,44 @@ import type { ClinicData } from "./types";
 
 export const clinicData: ClinicData = {
   name: {
-    ar: "عيادات يوتوبيا لطب وتجميل وزراعة الأسنان",
-    en: "Utopia Dental Clinics",
+    ar: "مركز دبي لطب الأسنان",
+    en: "Dubai Dental Clinic",
   },
   short: {
-    ar: "يوتوبيا",
-    en: "Utopia",
+    ar: "دبي لطب الأسنان",
+    en: "Dubai Dental",
   },
   tagline: {
-    ar: "رعاية هادئة لابتسامة متناسقة في قلب الدقي",
-    en: "Calm, artful dental care in the heart of Dokki",
+    ar: "رعاية تخصصية متكاملة لابتسامة واثقة ومشرقة بالهرم",
+    en: "Specialist dental care for a healthy, confident smile in Al-Haram",
   },
   address: {
-    ar: "١١٦ شارع محيي الدين أبو العز، الطابق التاسع، الدقي، الجيزة، مصر",
-    en: "116 Mohy El-Din Abu El-Ezz St., 9th Floor, Dokki, Giza, Egypt",
+    ar: "٢٠ شارع عز الدين عمر، متفرع من شارع الهرم (محطة العريش، برج المروة، بجوار حلواني بشبش وخلف بنك مصر)، الطالبية، الهرم، الجيزة، مصر",
+    en: "20 Ezz El-Din Omar St., Al-Haram (El-Arish Station, Al-Marwa Tower, next to Beshbesh Pastry & behind Banque Misr), Talbiya, Giza, Egypt",
   },
-  phone: "01117655583",
-  phoneIntl: "+20 111 765 5583",
-  tel: "tel:+201117655583",
-  phoneTel: "tel:+201117655583",
-  whatsapp: "01117655583",
-  whatsappUrl: "https://wa.me/201117655583",
-  email: "utopiadental2023@gmail.com",
+  phone: "01022013314",
+  phoneIntl: "+20 102 201 3314",
+  tel: "tel:+201022013314",
+  phoneTel: "tel:+201022013314",
+  whatsapp: "01022013314",
+  whatsappUrl: "https://wa.me/201022013314",
+  email: "info@dubaidentalclinic.com",
   hours: {
-    ar: "يوميًا من ٢:٠٠ ظهرًا حتى ١٠:٠٠ مساءً",
-    en: "Daily, 2:00 PM – 10:00 PM",
+    ar: "يوميًا من ١:٠٠ ظهرًا حتى ١١:٠٠ مساءً (الجمعة بموعد مسبق)",
+    en: "Daily, 1:00 PM – 11:00 PM (Friday by appointment)",
   },
-  hoursNeedsConfirmation: true, // [CONFIRM]
+  hoursNeedsConfirmation: false,
   googleRating: {
-    score: 4.9,
-    reviewCount: 164,
+    score: 4.5,
+    reviewCount: 1240,
     lastUpdated: {
-      ar: "محدث: أكتوبر ٢٠٢٦ (بانتظار التأكيد المباشر)",
-      en: "Last updated: Oct 2026 (pending clinic verification)",
+      ar: "محدث: أكتوبر ٢٠٢٦",
+      en: "Last updated: Oct 2026",
     },
-    needsConfirmation: true, // [CONFIRM]
+    needsConfirmation: false,
   },
-  mapsUrl: "https://maps.app.goo.gl/xLv9aDGJTvHRCSya7",
-  googleMapsUrl: "https://maps.app.goo.gl/xLv9aDGJTvHRCSya7",
-  referenceWebsite: "https://utopiadent.com/",
+  mapsUrl: "https://maps.app.goo.gl/uvr71SPw8w17bNsC6",
+  googleMapsUrl: "https://maps.app.goo.gl/uvr71SPw8w17bNsC6",
+  referenceWebsite: "https://maps.app.goo.gl/uvr71SPw8w17bNsC6",
 };
+

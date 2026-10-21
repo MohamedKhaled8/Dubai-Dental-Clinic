@@ -1,6 +1,6 @@
 /**
  * ==============================================================================
- * UTOPIA DENTAL CLINICS — DATA REPOSITORY LAYER
+ * DUBAI DENTAL CLINIC — DATA REPOSITORY LAYER
  * ==============================================================================
  * This repository layer abstracts all data access across the application.
  *

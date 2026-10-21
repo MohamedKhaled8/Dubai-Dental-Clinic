@@ -148,6 +148,8 @@ function RootComponent() {
       <QueryClientProvider client={queryClient}>
         <I18nProvider>
           <Outlet />
+          <DesktopFloatingWhatsApp />
+          <MobileBottomBar />
         </I18nProvider>
       </QueryClientProvider>
     );
@@ -168,6 +170,7 @@ function RootComponent() {
           <Outlet />
         </main>
         <Footer />
+        <DesktopFloatingWhatsApp />
         <MobileBottomBar />
       </I18nProvider>
     </QueryClientProvider>

@@ -1,8 +1,22 @@
-<svg width="240" height="60" viewBox="0 0 240 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect x="6" y="6" width="48" height="48" rx="14" fill="#0B4FC7" fill-opacity="0.08" stroke="#0B4FC7" stroke-width="1.8"/>
-  <path d="M21 21L25 24.5L30 19L35 24.5L39 21V26H21V21Z" fill="#C2A06A"/>
-  <path d="M23 27C23 24 26 23.5 30 23.5C34 23.5 37 24 37 27C37 32 35.5 36 34.5 39.5C33.5 43 32 43.5 30 42C28 43.5 26.5 43 25.5 39.5C24.5 36 23 32 23 27Z" stroke="#0B4FC7" stroke-width="2.2" stroke-linejoin="round" fill="#0B4FC7" fill-opacity="0.1"/>
-  <circle cx="36" cy="22" r="1.5" fill="#C2A06A"/>
-  <text x="64" y="30" font-family="Tajawal, sans-serif" font-size="18" font-weight="700" fill="#0B1B3A">مركز دبي لطب الأسنان</text>
-  <text x="64" y="46" font-family="Tajawal, sans-serif" font-size="10.5" font-weight="600" fill="#4A7CD2" letter-spacing="0.5">الهرم · زراعة · تقويم · تجميل</text>
+<svg width="320" height="100" viewBox="0 0 320 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Teal Tooth Icon -->
+  <g transform="translate(4, 8)">
+    <!-- Main tooth outline - teal -->
+    <path d="M44 6C38 6 34 9 30 9C27 9 24 7 20 7C14 7 10 11 10 18C10 24 12 28 14 35C16 42 17 50 20 55C22 59 25 60 28 57C29.5 55.5 30.5 54 32 54C33.5 54 34.5 55.5 36 57C39 60 42 59 44 55C47 50 48 42 50 35C52 28 54 24 54 18C54 11 50 6 44 6Z" fill="#2ABFBF" opacity="0.15" stroke="#2ABFBF" stroke-width="2.5" stroke-linejoin="round"/>
+    <!-- Inner tooth detail -->
+    <path d="M32 28C32 24 34 22 36 22" stroke="#2ABFBF" stroke-width="1.8" stroke-linecap="round" opacity="0.6"/>
+    <!-- Tooth top bumps -->
+    <path d="M18 18C18 14 21 12 24 12C26 12 27.5 13 29 13" stroke="#2ABFBF" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+    <path d="M46 18C46 14 43 12 40 12C38 12 36.5 13 35 13" stroke="#2ABFBF" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+  </g>
+
+  <!-- "Dubai" text in dark script style -->
+  <text x="80" y="52" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700" fill="#1a1a2e" font-style="italic">Dubai</text>
+  <!-- "ental" in teal to complete "Dental" — the "D" is shared visually with the tooth -->
+  <text x="80" y="82" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700" fill="#2ABFBF" font-style="italic">ental</text>
+
+  <!-- "Dr. Karim Kamal" with decorative lines -->
+  <line x1="76" y1="93" x2="115" y2="93" stroke="#1a1a2e" stroke-width="1.2"/>
+  <text x="118" y="96" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#1a1a2e" letter-spacing="0.8">Dr . Karim Kamal</text>
+  <line x1="247" y1="93" x2="286" y2="93" stroke="#1a1a2e" stroke-width="1.2"/>
 </svg>

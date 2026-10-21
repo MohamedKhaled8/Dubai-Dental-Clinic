@@ -34,8 +34,20 @@ export function ScrollProgress() {
   );
 }
 
+function WhatsAppIcon({ className = "w-5 h-5" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
+      <circle cx="16" cy="16" r="16" fill="#25D366"/>
+      <path
+        d="M23.5 8.5A9.93 9.93 0 0 0 16 5.5C10.75 5.5 6.5 9.75 6.5 15c0 1.64.43 3.24 1.25 4.65L6.5 25.5l6.05-1.59A9.94 9.94 0 0 0 16 24.5c5.25 0 9.5-4.25 9.5-9.5 0-2.54-.99-4.93-2.78-6.73l-.22-.27ZM16 22.9c-1.42 0-2.81-.38-4.02-1.1l-.29-.17-2.97.78.79-2.9-.19-.3A7.87 7.87 0 0 1 8.1 15c0-4.36 3.54-7.9 7.9-7.9 2.11 0 4.09.82 5.58 2.32a7.84 7.84 0 0 1 2.32 5.6c0 4.35-3.54 7.88-7.9 7.88Zm4.33-5.91c-.24-.12-1.4-.69-1.61-.77-.21-.08-.37-.12-.52.12-.16.24-.6.77-.74.92-.14.16-.27.17-.5.06-.24-.12-1-.37-1.9-1.17-.7-.63-1.17-1.4-1.31-1.64-.14-.24-.01-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.52-1.26-.72-1.72-.19-.45-.38-.39-.52-.4h-.45c-.16 0-.41.06-.63.3-.22.24-.83.81-.83 1.97s.85 2.28.97 2.44c.12.16 1.67 2.55 4.04 3.58.56.24 1 .39 1.34.5.56.18 1.07.15 1.48.09.45-.07 1.4-.57 1.6-1.13.2-.55.2-1.02.14-1.12-.06-.1-.22-.16-.46-.28Z"
+        fill="white"
+      />
+    </svg>
+  );
+}
+
 export function DesktopFloatingWhatsApp() {
-  const { tr, lang } = useI18n();
+  const { lang } = useI18n();
   const isAr = lang === "ar";
 
   return (
@@ -48,15 +60,16 @@ export function DesktopFloatingWhatsApp() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label={isAr ? "تواصل معنا مباشرة عبر واتساب" : "Chat on WhatsApp"}
-        className="relative flex items-center gap-3 bg-[#0E1F1C] text-white px-5 py-3 rounded-full border border-[#C2A06A]/40 shadow-xl hover:border-[#C2A06A] hover:bg-[#16372F] transition-all duration-300 hover:scale-105 active:scale-95"
+        className="relative flex items-center gap-3 bg-[#075e54] text-white px-5 py-3.5 rounded-full shadow-2xl shadow-green-900/40 hover:bg-[#128c7e] transition-all duration-300 hover:scale-105 active:scale-95 border border-white/10"
       >
+        {/* Pulse ring */}
         <span className="relative flex h-3 w-3">
-          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-          <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#25D366] opacity-75"></span>
+          <span className="relative inline-flex rounded-full h-3 w-3 bg-[#25D366]"></span>
         </span>
-        <MessageCircle className="w-5 h-5 text-emerald-400 shrink-0" />
-        <span className="text-xs font-semibold tracking-wide">
-          {isAr ? "محادثة واتساب سريعة" : "WhatsApp Desk"}
+        <WhatsAppIcon className="w-5 h-5 shrink-0" />
+        <span className="text-sm font-bold tracking-wide">
+          {isAr ? "واتساب" : "WhatsApp"}
         </span>
       </a>
     </aside>
@@ -90,7 +103,7 @@ export function MobileBottomBar() {
         rel="noopener noreferrer"
         className="flex-1 flex flex-col items-center justify-center py-1.5 px-2 rounded-xl text-white/80 hover:text-white hover:bg-white/10 transition-colors"
       >
-        <MessageCircle className="w-4 h-4 text-emerald-400 mb-0.5" />
+        <WhatsAppIcon className="w-5 h-5 mb-0.5" />
         <span className="text-[10px] font-bold tracking-tight">
           {isAr ? "واتساب" : "WhatsApp"}
         </span>
